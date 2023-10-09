@@ -1,0 +1,185 @@
+{% extends 'service/base.html' %}
+{% load static %}
+
+
+{% block info %}
+
+<img src="{% static 'icon/ru.png' %}" class="rounded " height="20" alt="..." style="background-color: #4a4a4a;">
+<img src="{% static 'icon/kz.png' %}" class="rounded mx-3 " height="20" width="32px" alt="..." style="background-color: #4a4a4a;">
+<a href="{% url 'logout' %}"><img src="{% static 'icon/exit-icon.png' %}" class="rounded" height="30" alt="..." style="background-color: #4a4a4a;"></a>
+{% if user_info %}
+<p class="text-white rounded float-end mx-1 mt-1"><b>{{user_info}} очисток</b></p>
+{% else %}
+<p class="text-white rounded float-end mx-1 mt-1"><b>0₽</b></p>
+{% endif %}
+<button type="button" class="btn btn-success mx-3" style="height: 26px;"><p style="font-size: 10px; ">Пополнить</p></button>
+
+{% endblock %}
+
+
+{% block content %}
+
+
+<!-- Price List-->
+<div class="container mt-5 border border-secondary rounded-5" style="background-color: rgba(47, 47, 54, 0.7);">
+<table class="table table-borderless text-white mt-3">
+  <thead class="teble-light text-center">
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Пробный</th>
+      <th scope="col">Начинающий</th>
+      <th scope="col">Продвинутый</th>
+      <th scope="col">Эксперт</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Количество очисток в тарифе:</th>
+        <td class="text-center">{{ cart.trial_quantity }}</td>
+        <td class="text-center">{{ cart.beginner_quantity }}</td>
+        <td class="text-center">{{ cart.advanced_quantity }}</td>
+        <td class="text-center">{{ cart.expert_quantity }}</td>
+      </tr>
+      <tr>
+        <th scope="row">Бонусные очистки:</th>
+        <td class="text-center">{{ cart.trial_bonus }}</td>
+        <td class="text-center">{{ cart.beginner_bonus }}</td>
+        <td class="text-center">{{ cart.advanced_bonus }}</td>
+        <td class="text-center">{{ cart.expert_bonus }}</td>
+      </tr>
+      <tr>
+        <th scope="row">Доступ к очисткам:</th>
+        <td class="text-center">{{ cart.trial_access }}</td>
+        <td class="text-center">{{ cart.beginner_access }}</td>
+        <td class="text-center">{{ cart.advanced_access }}</td>
+        <td class="text-center">{{ cart.expert_access }}</td>
+      </tr>
+      <tr>
+        <th scope="row">Стоимость:</th>
+        <td class="text-center">{{ cart.trial_price|floatformat:0 }}</td>
+        <td class="text-center">{{ cart.beginner_price|floatformat:0 }}</td>
+        <td class="text-center">{{ cart.advanced_price|floatformat:0 }}</td>
+        <td class="text-center">{{ cart.expert_price|floatformat:0 }}</td>
+      </tr>
+      <tr>
+        <th scope="row"></th>
+        <td class="text-center"><button type="button" class="btn btn-secondary" disabled>Готово</button></td>
+        <td class="text-center"><a href="{% url 'checkout' item='beginner' %}" class="btn btn-success">Купить</a></td>
+        <td class="text-center"><a href="{% url 'checkout' item='advanced' %}" class="btn btn-success">Купить</a></td>
+        <td class="text-center"><a href="{% url 'checkout' item='expert' %}" class="btn btn-success">Купить</a></td>
+      </tr>
+    </tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="container text-center">
+<div class="input-link" style=" margin-top: 70px;">
+        <h2 class="text-white"> Аккаунт {{ user }}</h2>
+    <div class="sevice-img pb-2">
+    <img src="{% static 'icon/kn.png' %}" class="px-2">
+    <img src="{% static 'icon/krisha.svg' %}" class="px-2">
+    <img src="{% static 'icon/m2bomber.png' %}" width="50px" class="px-2">
+    <img src="{% static 'icon/olx.svg' %}" class="px-2">
+    </div>
+    <form action="" method="POST">
+        {% csrf_token %}
+    <div class="input-group mb-2">
+  <input type="text" class="form-control" placeholder="Вставьте ссылку" aria-label="Recipient's username" aria-describedby="button-addon2" name="link_input">
+  <input class="btn btn-primary" type="submit" value="Скачать" id="InputButton">
+</div>
+    </form>
+</div>
+</div>
+
+
+
+<div class="container text-wight text-center">
+    <h2 class="text-shite bg-secondary"><div id="resultMessage" class="text-dark">{{error}}</div></h2>
+</div>
+
+
+
+
+<div class="container">
+  <div id="progress-bar">
+    <div class="progress_"></div>
+    <div class="text text-white text-center">0%</div>
+  </div>
+</div>
+
+
+
+<script>
+  document.getElementById('InputButton').addEventListener('click', function() {
+    var text = document.querySelector('#progress-bar .text');
+    var width = 0;
+    var interval = setInterval(frame, 300);
+
+    function frame() {
+      if (width >= 100) {
+        clearInterval(interval);
+      } else {
+        width++;
+        text.innerHTML = width + '%';
+      }
+    }
+  });
+</script>
+
+
+
+
+<div class="container">
+{% if images %}
+    {% for img in images %}
+            <img src="{% static 'users_out/' %}{{ user }}/{{ dt }}/{{ img }}" class="img-thumbnail m-1" alt="..." style="width: 300px; height: 200px;">
+    {% endfor %}
+{% endif %}
+</div>
+
+
+{% if images %}
+<div class="container text-center mt-3">
+    <button type="button" class="btn btn-secondary"><a href="{% url 'download_images' user_id=user.id %}" style="text-decoration: none; color: white">Скачать изображения</a></button>
+</div>
+{% endif %}
+
+<!--<div class="container">-->
+<!--    <div class="table-responsive">-->
+<!--<table class="table" style="background-color: #333232; border-style: dotted">-->
+<!--  <thead class="text-white">-->
+<!--    <tr>-->
+<!--      <th scope="col">#</th>-->
+<!--      <th scope="col">Площадка</th>-->
+<!--      <th scope="col">Адрес</th>-->
+<!--      <th scope="col">Дата</th>-->
+<!--        <th scope="col"> Объявление </th>-->
+<!--      <th scope="col">Скачать</th>-->
+<!--    </tr>-->
+<!--  </thead>-->
+<!--  <tbody class="table-group-divider text-white">-->
+<!--  {% for elem in user_request %}-->
+<!--    <tr>-->
+<!--      <th scope="row">{{ elem.pk }}</th>-->
+<!--      <td>{{ elem.platform }}</td>-->
+<!--        <td>{{ elem.addres }}</td>-->
+<!--      <td>{{ elem.created_date }}</td>-->
+<!--        <td><a href="{{ elem.lot_link }}">К обьявлению</a></td>-->
+<!--      <td><a href="{{ elem.download_link }}">Скачать</a></td>-->
+<!--    </tr>-->
+<!--  {% endfor %}-->
+<!--  </tbody>-->
+<!--</table>-->
+<!--</div>-->
+<!--</div>-->
+
+{% endblock %}

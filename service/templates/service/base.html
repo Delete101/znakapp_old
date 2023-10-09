@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZnakApp</title>
+    <link type="image/x-icon" href="{% static 'icon/favicon.png' %}" rel="shortcut icon">
+    <link type="Image/x-icon" href="{% static 'icon/favicon.png' %}" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+    body {
+      background-image: url("{% static 'img/bg-dark.png' %}");
+      background-color: #121212;
+      background-size: 100hv;
+      background-attachment: fixed;
+      background-size: 100%;
+      text-color: white;
+    }
+
+    .push-notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border: 2px solid #3630e3;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+.push-notification__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.push-notification__title {
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+
+.push-notification__message {
+  font-size: 14spx;
+  margin: 0 0 20px;
+}
+
+.push-notification__actions {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+
+}
+
+.push-notification__close,
+.push-notification__register {
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: none;
+
+}
+
+ /* Стили для уведомления */
+        #notification {
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 9999;
+        }
+
+        /* Стили для скрытия уведомления */
+        .hidden {
+            display: none;
+        }
+
+
+
+#maintenance-banner {
+  background-color: #f00; /* Цвет фона плашки (красный в данном случае) */
+  color: #fff; /* Цвет текста на плашке (белый в данном случае) */
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999; /* Выше всех остальных элементов на странице */
+}
+
+  </style>
+
+
+
+</head>
+<body>
+
+<!--  NAVBAR      -->
+
+<div class="container mt-4">
+    <ul class="nav justify-content-center">
+        <a href="{% url 'homepage'%}"><img src="{% static 'img/logo.svg' %}" width="100" height="39" alt="..."></a>
+  <li class="nav-item">
+    <a class="nav-link active text-white" aria-current="page" href="{% url 'how-it-work' %}">Как это работает?</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-white" href="{% url 'price-list' %}">Стоимость</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled text-white-50" href="#">Telegram Bot</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled text-white-50">API</a>
+  </li>
+    <li class="nav-item">
+        <a class="nav-link text-white" href="{% url 'contacts'%}">Контакты</a>
+      </li>
+        <li class="nav-item">
+        {% block info %}
+    <a href="{% url 'login' %}"><img src="{% static 'icon/user-icon.png' %}" class="rounded float-end" height="30" alt="..." style="background-color: grey;"></a>
+    <img src="{% static 'icon/ru.png' %}" class="rounded float-end mx-3 mt-2" height="20" alt="..." style="background-color: #4a4a4a;">
+    <img src="{% static 'icon/kz.png' %}" class="rounded float-end  mt-2" height="20" width="32px" alt="..." style="background-color: #4a4a4a;">
+            {% endblock %}
+        </li>
+    </ul>
+</div>
+
+
+<!-- Not working messages --><!--
+<div id="maintenance-banner">
+  <p>Сайт временно недоступен в связи с техническими работами. Пожалуйста, зайдите позже.</p>
+</div>-->
+<!-- Not working messages --> 
+
+<!--  NAVBAR      -->
+
+
+{% block content %}
+
+
+<!-- BODY -->
+<div class="mt-5">
+<div class="main text-center" style="margin-top: 130px;">
+    <div class="main-text">
+    <h2 class="text-white" style="font-size: 60px;"><b>Скачивайте объявления <br>
+        без водяных знаков</b></h2>
+    </div>
+<div class="container">
+<div class="input-link" style="margin-top: 70px;">
+<!--    <p class="text-white">Объявления: </p>-->
+    <div class="sevice-img pb-2">
+    <img src="{% static 'icon/kn.png' %}" class="px-2">
+    <img src="{% static 'icon/krisha.svg' %}" class="px-2">
+    <img src="{% static 'icon/m2bomber.png' %}" width="50px" class="px-2">
+    <img src="{% static 'icon/olx.svg' %}" class="px-2">
+    </div>
+    <form action="" method="POST">
+        {% csrf_token %}
+    <div class="input-group mb-2">
+  <input type="text" class="form-control" placeholder="Вставьте ссылку" aria-label="Recipient's username" aria-describedby="button-addon2" name="link_input">
+  <input class="btn btn-primary" type="submit" value="Скачать" id="InputButton" >
+</div>
+    </form>
+
+
+<div class="container text-white text-center">
+    <p><strong>Внимание: даже если полоса загрузки дошла до 100%, не покидайте ресурс, дождитесь выгрузки фото. Обычно это занимает не более 10 секунд</strong></p>
+    {% if images  %}
+    <a href='/'><img src="{% static 'img/like.png'%}" class="rounded-circle border border-success m-2" style="width: 40px; height: 40px; background: green;"></a>
+    <a href='/'><img src="{% static 'img/dislike.png'%}" class="rounded-circle border border-danger" style="width: 40px; height: 40px; background: red;"></a>
+    {% endif  %}              
+</div>
+
+
+
+<div class="container text-white">
+    <h2 class="text-shite bg-secondary"><div id="resultMessage" class="text-dark">{{error}}</div></h2>
+</div>
+
+
+
+<div class="container">
+  <div id="progress-bar">
+    <div class="progress" style='background-color: blue; width: 0px;'></div>
+    <div class="text text-white text-center"></div>
+  </div>
+</div>
+
+
+
+<script>
+  document.getElementById('InputButton').addEventListener('click', function() {
+    var progressBar = document.querySelector('#progress-bar .progress');
+    var text = document.querySelector('#progress-bar .text');
+    var width = 0;
+    var interval = setInterval(frame, 800);
+
+    function frame() {
+      if (width >= 100) {
+        clearInterval(interval);
+      } else {
+        width++;
+        progressBar.style.width = width + '%';
+        text.innerHTML = width + '%';
+      }
+    }
+  });
+</script>
+
+
+
+
+<!-- <div class="container">
+    <div class="progress-bar" style="width: 100%;
+  height: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;">
+  <div class="progress" style="width: 0;
+  height: 100%;
+  background-color: blue;
+  transition: width 0.5s ease-in-out;
+}">
+  </div>
+</div>
+</div>
+
+       <script>
+    document.getElementById("InputButton").addEventListener("click", function() {
+      setInterval(incrementProgressBar, 1000);
+    });
+
+    function incrementProgressBar() {
+      var progressElement = document.querySelector(".progress");
+      var width = parseInt(getComputedStyle(progressElement).width);
+      var maxWidth = parseInt(getComputedStyle(progressElement.parentElement).width);
+
+      if (width < maxWidth) {
+        progressElement.style.width = (width + 20) + "px";
+      }
+    }
+  </script>
+         -->
+
+
+
+
+{% if images %}
+<div class="container">
+    <h4 class="text-white"><strong>Для просмотра фото пройдите <a href="{% url 'register'%}" style="color: #0d6efd">регистрацию</a> или <a href="{% url 'login' %}" style="color: #0d6efd">войдите</a></strong></h4>
+</div>
+<hr style=" color: grey;">
+{% endif %}
+
+<div class="container text-white bg-dark rounded-3 mb-3 ">
+{% if images %}
+<div id="textToCopy">
+   {{ context  }} 
+</div>
+
+<button class='btn btn-primary' id="copyButton">Копировать текст</button><br>
+<div id="notification" class="hidden">Скопировано!</div>
+
+    <script>
+        // Находим кнопку и уведомление по id
+        const copyButton = document.getElementById("copyButton");
+        const notification = document.getElementById("notification");
+
+        // Добавляем обработчик события для кнопки
+        copyButton.addEventListener("click", function() {
+            // Показываем уведомление
+            notification.style.display = "block";
+
+            // Скрываем уведомление через 3 секунды (3000 миллисекунд)
+            setTimeout(function() {
+                notification.style.display = "none";
+            }, 3000);
+        });
+    </script>
+
+{% endif %}
+</div>
+{% if images %}
+    {% for img in images %}
+        {% if 'first_img.png' == img %}
+            <img src="{% static 'out/' %}{{img}}" class="img-thumbnail m-1" alt="..." style="width: 300px; height: 200px;">
+        {% else %}
+            <img src="{% static 'out/' %}{{img}}" class="img-thumbnail m-1" alt="..." style="width: 300px; height: 200px; filter: blur(4px);">
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+
+ {% if images %}
+
+<div id="push-notification" class="push-notification text-white">
+    <div class="push-notification__content">
+      <h3 class="push-notification__title">Пройдите регистрацию и получите <br>3 бесплатные очистки</h3>
+      <p class="push-notification__message"></p>
+      <div class="push-notification__actions">
+        <button class="push-notification__close">Закрыть</button>
+        <a href="{% url 'register' %}"><button class="push-notification__register">Регистрация</button></a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showNotification(title, message) {
+  var notification = document.getElementById('push-notification');
+  notification.querySelector('.push-notification__title').innerText = title;
+  notification.querySelector('.push-notification__message').innerText = message;
+  notification.style.display = 'block';
+}
+
+// Скрытие уведомления
+function hideNotification() {
+  var notification = document.getElementById('push-notification');
+  notification.style.display = 'none';
+}
+
+// Обработка нажатия на кнопку "Закрыть"
+document.querySelector('.push-notification__close').addEventListener('click', function() {
+  hideNotification();
+});
+
+// Обработка нажатия на кнопку "Регистрация"
+document.querySelector('.push-notification__register').addEventListener('click', function() {
+  // Ваш код для регистрации пользователя
+});
+
+  </script>
+
+
+{% endif %}
+
+
+
+
+
+
+
+
+      <p class="text-white" style="font-size: 22px;">
+    Автоматически убирает логотипы и водяные знаки с фотографий!<br>
+    Без потери качества и размеров!
+    </p>
+<br><br><br><br>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- BODY -->
+
+
+<!--<div class="d-none d-xxl-block">-->
+<!--<img src="{% static 'img/bg-1.png' %}" alt="" style="position:absolute;top:100px;left:77%">-->
+<!--<img src="{% static 'img/bg-2.png' %}" alt="" style="position:absolute;top:350px;left:82.3%">-->
+<!--<img src="{% static 'img/bg-3.png' %}" alt="" style="position:absolute;top:687px;left:77%">-->
+<!--</div>-->
+
+
+<!-- Footer -->
+
+{% endblock %}
+<footer class="text-white">
+  <!-- Grid container -->
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="p-3" style="background-color: transparent; font-family: sans-serif;">
+    © 2023:
+    <a class="text-white" href="{% url 'homepage' %}">ZnakApp</a>
+      <div style="font-size: 11px;">Товарищество с ограниченной ответственностью “FORREALTOR”<br>
+          Бизнес-идентификационный номер (БИН)  221140043535<br>
+     <!-- <u><a href="{% url 'pol_sogl' %}" style="color: white">Пользовательское соглашение</a></u>
+      <u><a href="{% url 'pol_obr' %}" style="color: white">Политика обработки персональных данных</a></u>
+      <u><a href="{% url 'sposob_opl' %}" style="color: white">Способ оплаты и возврата товара</a></u>
+      <u><a href="{% url 'oferta' %}" style="color: white">Оферта</a></u>
+      <img src="{% static 'img/img.png' %}" class="" height="30" width="100px" alt="...">
+      <img src="{% static 'img/img_1.png' %}" class="" height="30" width="180px" alt="..."> -->
+<a href="https://freekassa.ru" target="_blank" rel="noopener noreferrer">
+  <img src="https://cdn.freekassa.ru/banners/big-dark-1.png" title="Прием платежей на сайте">
+</a>
+      </div>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<!-- Footer -->
+</body>
+</html>

@@ -1,0 +1,7 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}

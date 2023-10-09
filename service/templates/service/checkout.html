@@ -1,0 +1,20 @@
+{% extends 'service/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="container text-white mt-5">
+<h1>Корзина</h1>
+<h3>Информация о товаре:</h3>
+<div class="info">
+<p>Количество очисток в тарифе: {{ quantity }}</p>
+<p>Бонусные очистки: {{ bonus }}</p>
+<p>Доступ к очисткам:: {{ access }}</p>
+<p><strong>Стоимость: {{ price }}</strong></p>
+<button type="button" class="btn btn-success">Оплатить</button>
+</div>
+<img src="{% static 'img/img.png' %}" class="mt-2" height="30" width="80px" alt="...">
+<img src="{% static 'img/img_1.png' %}" class="" height="30" width="140px" alt="...">
+</div>
+{% endblock %}

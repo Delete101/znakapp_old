@@ -1,0 +1,1415 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" lang="ru">
+<head>
+<meta content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width, viewport-fit=cover" name="viewport">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="og:title" content="Сайт бесплатных объявлений Nedvizhimostpro.kz" />
+<meta name="og:description" content="Объявления о купле-продаже и аренде недвижимости в Казахстане. С Nedvizhimostpro.kz у вас всегда будет &quot;крыша&quot; над головой!" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://nedvizhimostpro.kz" />
+<meta name="og:site_name" content="Nedvizhimostpro.kz" />
+<meta name="fb:app_id" content="460772007317087" />
+<meta name="og:image" content="https://nedvizhimostpro.kz/images/logo_google.png" />
+<meta name="og:locale" content="ru_RU" />
+<meta name="geo.placename" content="Казахстан" />
+<meta name="geo.position" content="48.0195730;66.9236840" />
+<meta name="geo.region" content="KZ-" />
+<meta name="ICBM" content="48.0195730, 66.9236840" />
+<link rel="canonical" href="https://nedvizhimostpro.kz/" />
+<link rel="stylesheet" type="text/css" href="/assets/e9bdd810/pager.css" />
+<link rel="stylesheet" type="text/css" href="/frontend/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/frontend/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/frontend/css/responsive.css" />
+<script type="text/javascript" src="https://nedvizhimostpro.kz/frontend/js/jquery-3.3.1.js"></script>
+<script type="text/javascript">var BASE_URL = '';
+var params = {
+change_search_ajax: 1
+}</script>
+<title>Недвижимость в Казахстане - продажа и аренда квартир, домов и коттеджей</title>
+<meta name="description" content="Каталог объявлений о недвижимости в Казахстане — продажа квартир и комнат, жилая и коммерческая аренда, новостройки, загородная недвижимость. Фотокаталоги недвижимости." />
+<meta name="keywords" content=" " />
+<meta name="google" content="notranslate" />
+<meta name="theme-color" content="#f04949" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="manifest" href="/images/backgrounds/manifest.json">
+<link rel="preconnect" href="//www.google-analytics.com/" crossorigin="anonymous" />
+<link rel="preconnect" href="//mc.yandex.ru" crossorigin="anonymous" />
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="application-name" content="Nedvizhimostpro.kz">
+<meta name="apple-mobile-web-app-title" content="Nedvizhimostpro.kz">
+<meta name="theme-color" content="#f04949">
+<meta name="msapplication-navbutton-color" content="#f04949">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="msapplication-starturl" content="https://nedvizhimostpro.kz">
+<link rel="icon" type="image/png" sizes="192x192" href="/images/backgrounds/ic_launcher.png">
+<link rel="apple-touch-icon" type="image/png" sizes="192x192" href="/images/backgrounds/ic_launcher.png">
+</head>
+<body><script type="text/javascript" src="/js/common.js"></script>
+<div class="wrapper">
+<div class="preloader"></div>
+<header class="header-nav menu_style_home_one home4 navbar-scrolltofixed stricky main-menu">
+<div class="container-fluid p0">
+<nav>
+<div class="menu-toggle">
+<img class="nav_logo_img img-fluid" src="/frontend/images/header-logo.png" alt="header-logo.png">
+<button type="button" id="menu-btn">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div style="margin-left: 70px;">
+<a style="text-decoration: none;" href="/" class="navbar_brand float-left dn-smd">
+<img style="margin-top:3px;" class="logo1 img-fluid" src="/frontend/images/header-logo.png" alt="header-logo.png">
+<img class="logo2 img-fluid" src="/frontend/images/header-logo2.png" alt="header-logo2.png">
+<span>Недвижимость</span>
+</a>
+<a href="#menu" class="navbar_brand" style="margin-top:0;position: inherit;">
+<div class="hamburger-lines logo1">
+<span class="line line1"></span>
+<span class="line line2"></span>
+<span class="line line3"></span>
+</div>
+<div class="hamburger-lines logo2" style="margin-top:0;position: inherit;">
+<span style="background:#f04949" class="line line1"></span>
+<span style="background:#f04949" class="line line2"></span>
+<span style="background:#f04949" class="line line3"></span>
+</div>
+</a>
+</div>
+<ul id="respMenu" class="ace-responsive-menu text-right" data-menu-style="horizontal">
+<li class="list-inline-item"><a id="favicn" href="javascript:void(0);" class="btn cart-btn" data-toggle="modal" data-target=".bd-example-modal-lg"><span class="dn-lg"><i style="padding-left: 10px;" class="fa fa-heart-o" aria-hidden="true"></i></span></a></li>
+<li class="last">
+<a href="/contact-us"><span class="title"> Связаться с нами</span></a>
+</li>
+<li class="list-inline-item"><a href="/userlistings" class="btn flaticon-user"> Личный кабинет</span></a></li>
+<li class="list-inline-item add_listing"><a href="/userlistings/create#content-1"><span class="flaticon-plus"></span><span class="dn-lg"> Добавить объявление</span></a></li>
+</ul>
+</nav>
+</div>
+</header>
+<div class="sign_up_modal modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+<div class="modal-body container pb20">
+<div class="row">
+<div class="novis_wishlist tabs-act" style="width: 100%;padding: 30px;">
+<h5>Избранное</h5>
+<ul class="tabs-menu fl-wrap no-list-style">
+<li style="width: 100%;" class="current" id="fav-sum"></li>
+</ul>
+<div class="tabs-container">
+<div class="tab">
+<div id="tab-wish" class="tab-content first-tab">
+<div class="header-modal-container scrollbar-inner fl-wrap" data-simplebar>
+<div class="widget-posts  fl-wrap">
+<ul id="favorite-main" class="no-list-style"></ul>
+</div>
+</div>
+<div class="header-modal-top fl-wrap">
+<div id="trashfav" style="color:#484848;" class="clear_wishlist color-bg">
+<i class="fa fa-trash-o" aria-hidden="true"></i> Удалить все														</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="page" class="stylehome1 h0">
+<div class="mobile-menu">
+<div class="header stylehome1">
+<div class="main_logo_home2 text-center" style="display: flex;height: 50px;justify-content: center;padding: 45px;align-items: center;">
+<div id="goMainPage" style="font-size: 22px;color: #f04949;">Недвижимость</div>
+</div>
+<ul class="menu_bar_home2">
+<li class="list-inline-item list_s"><a style="text-decoration: none;" href="/userlistings/create#content-1"><span style="color:#3a68ab;font-size: 22px;" class="flaticon-plus"></span></a></li>
+<li class="list-inline-item"><a class="mobMenu" href="#menu"><span></span></a></li>
+</ul>
+</div>
+</div>
+<nav id="menu" class="stylehome1">
+<ul>
+<li><a href="/"><span>Главная</span></a>
+</li>
+<li><span>Продажа</span>
+<ul>
+<li><span>Жилые комплексы</span>
+<ul>
+<li><a href="/complexes/astana">Астана</a></li>
+<li><a href="/complexes/almaty">Алматы</a></li>
+<li><a href="/complexes/aktau">Актау</a></li>
+<li><a href="/complexes/atyrau">Атырау</a></li>
+<li><a href="/complexes/shimkent">Шымкент</a></li>
+</ul>
+</li>
+<li><a title="Недвижимость в Астане цены, фото" href="/page/132">Астана</a></li>
+<li><a title="Недвижимость в Алматы цены, фото" href="/page/86">Алматы</a></li>
+<li><a title="Недвижимость в Актау цены, фото" href="/page/117">Актау</a></li>
+<li><a title="Недвижимость в Актобе цены, фото" href="/page/118">Актобе</a></li>
+<li><a title="Недвижимость в Атырау цены, фото" href="/page/119">Атырау</a></li>
+<li><span>Карагандинская обл.</span>
+<ul>
+<li><a title="Недвижимость в Караганде цены, фото" href="/page/120">Караганда</a></li>
+<li><a title="Недвижимость в Темиртау цены, фото" href="/page/158">Темиртау</a></li>
+</ul>
+</li>
+<li><a title="Недвижимость в Костанай цены, фото" href="/page/122">Костанай</a></li>
+<li><a title="Недвижимость в Кызылорде цены, фото" href="/page/40">Кызылорда</a></li>
+<li><a title="Недвижимость в Павлодаре цены, фото" href="/page/124">Павлодар</a></li>
+<li><a title="Недвижимость в Семее цены, фото" href="/page/125">Семей</a></li>
+<li><a title="Недвижимость в Таразе цены, фото" href="/page/126">Тараз</a></li>
+<li><a title="Недвижимость в Петропавловске цены, фото" href="/page/127">Петропавловск</a></li>
+<li><a title="Недвижимость в Уральске цены, фото" href="/page/129">Уральск</a></li>
+<li><a title="Недвижимость в Усть-Каменогорске цены, фото" href="/page/128">Усть-Каменогорск</a></li>
+<li><a title="Недвижимость в Шымкенте цены, фото" href="/page/130">Шымкент</a></li>
+</ul>
+</li>
+<li><a rel="nofollow" href="/page/103" title="">Аренда</a></li>
+<li><span>Квартиры</span>
+<ul>
+<li><span>Квартиры в новостройках</span>
+<ul>
+<li><a href="/kupit-kvartiru-novostroyki-astana">Астана</a></li>
+<li><a href="/kupit-kvartiru-novostroyki-almaty">Алматы</a></li>
+<li><a href="/kupit-kvartiru-novostroyki-aktau">Актау</a></li>
+<li><a href="/kupit-kvartiru-novostroyki-atyrau">Атырау</a></li>
+<li><a href="/kupit-kvartiru-novostroyki-shimkent">Шымкент</a></li>
+</ul>
+</li>
+<li><a title="Продажа квартир в Астана цены, фото" href="/page/25">Астана</a></li>
+<li><a title="Продажа квартир в Алматы цены, фото" href="/page/29">Алматы</a></li>
+<li><a title="Продажа квартир в Актау цены, фото" href="/page/33095">Актау</a></li>
+<li><a title="Продажа квартир в Актобе цены, фото" href="/page/36590">Актобе</a></li>
+<li><a title="Продажа квартир в Атырау цены, фото" href="/page/34589">Атырау</a></li>
+<li><span>Карагандинская обл.</span>
+<ul>
+<li><a title="Продажа квартир в Караганда цены, фото" href="/page/33">Караганда</a></li>
+<li><a title="Продажа квартир в Темиртау цены, фото" href="/page/157">Темиртау</a></li>
+</ul>
+</li>
+<li><a title="Продажа квартир в Костанай цены, фото" href="/page/37418">Костанай</a></li>
+<li><a title="Продажа квартир в Кызылорда цены, фото" href="/page/36567">Кызылорда</a></li>
+<li><a title="Продажа квартир в Павлодар цены, фото" href="/page/141">Павлодар</a></li>
+<li><a title="Продажа квартир в Семей цены, фото" href="/page/140">Семей</a></li>
+<li><a title="Продажа квартир в Тараз цены, фото" href="/page/155">Тараз</a></li>
+<li><a title="Продажа квартир в Петропавловск цены, фото" href="/page/35">Петропавловск</a></li>
+<li><a title="Продажа квартир в Уральск цены, фото" href="/page/34612">Уральск</a></li>
+<li><a title="Продажа квартир в Усть-Каменогорск цены, фото" href="/page/139">Усть-Каменогорск</a></li>
+<li><a title="Продажа квартир в Шымкент цены, фото" href="/page/35716">Шымкент</a></li>
+</ul>
+</li>
+<li><span>Коттеджи</span>
+<ul>
+<li><a title="Продажа домов (коттеджей) в Астане цены, фото" href="/page/59">Астана</a></li>
+<li><a title="Продажа домов (коттеджей) в Алматы цены, фото" href="/page/88">Алматы</a></li>
+<li><a title="Продажа домов (коттеджей) в Актау цены, фото" href="/page/33099">Актау</a></li>
+<li><a title="Продажа домов (коттеджей) в Актобе цены, фото" href="/page/36594">Актобе</a></li>
+<li><a title="Продажа домов (коттеджей) в Атырау цены, фото" href="/page/34593">Атырау</a></li>
+<li><span>Карагандинская обл.</span>
+<ul>
+<li><a title="Продажа домов (коттеджей) в Караганде цены, фото" href="/page/148">Караганда</a></li>
+<li><a title="Продажа домов (коттеджей) в Темиртау цены, фото" href="/page/3997">Темиртау</a></li>
+</ul>
+</li>
+<li><a title="Продажа домов (коттеджей) в Костанай цены, фото" href="/page/37422">Костанай</a></li>
+<li><a title="Продажа домов (коттеджей) в Кызылорде цены, фото" href="/page/36571">Кызылорда</a></li>
+<li><a title="Продажа домов (коттеджей) в Павлодаре цены, фото" href="/page/6457">Павлодар</a></li>
+<li><a title="Продажа домов (коттеджей) в Семее цены, фото" href="/page/31836">Семей</a></li>
+<li><a title="Продажа домов (коттеджей) в Таразе цены, фото" href="/page/33076">Тараз</a></li>
+<li><a title="Продажа домов (коттеджей) в Петропавловске цены, фото" href="/page/32732">Петропавловск</a></li>
+<li><a title="Продажа домов (коттеджей) в Уральске цены, фото" href="/page/34616">Уральск</a></li>
+<li><a title="Продажа домов (коттеджей) в Усть-Каменогорске цены, фото" href="/page/142">Усть-Каменогорск</a></li>
+<li><a title="Продажа домов (коттеджей) в Шымкенте цены, фото" href="/page/35720">Шымкент</a></li>
+</ul>
+</li>
+<li><span>Посуточно</span>
+<ul>
+<li><a title="Квартиры посуточно в Астане цены, фото" href="/page/45">Астана</a></li>
+<li><a title="Квартиры посуточно в Алматы цены, фото" href="/page/47">Алматы</a></li>
+<li><a title="Квартиры посуточно в Актау цены, фото" href="/page/53">Актау</a></li>
+<li><a title="Квартиры посуточно в Актобе цены, фото" href="/page/36603">Актобе</a></li>
+<li><a title="Квартиры посуточно в Атырау цены, фото" href="/page/34602">Атырау</a></li>
+<li><span>Карагандинская обл.</span>
+<ul>
+<li><a title="Квартиры посуточно в Караганде цены, фото" href="/page/151">Караганда</a></li>
+<li><a title="Квартиры посуточно в Темиртау цены, фото" href="/page/4006">Темиртау</a></li>
+</ul>
+</li>
+<li><a title="Квартиры посуточно в Костанае цены, фото" href="/page/37431">Костанай</a></li>
+<li><a title="Квартиры посуточно в Кызылорде цены, фото" href="/page/36580">Кызылорда</a></li>
+<li><a title="Квартиры посуточно в Павлодаре цены, фото" href="/page/60">Павлодар</a></li>
+<li><a title="Квартиры посуточно в Семее цены, фото" href="/page/58">Семей</a></li>
+<li><a title="Квартиры посуточно в Таразе цены, фото" href="/page/33085">Тараз</a></li>
+<li><a title="Квартиры посуточно в Петропавловске цены, фото" href="/page/32741">Петропавловск</a></li>
+<li><a title="Квартиры посуточно в Уральске цены, фото" href="/page/34625">Уральск</a></li>
+<li><a title="Квартиры посуточно в Усть-Каменогорске цены, фото" href="/page/146">Усть-Каменогорск</a></li>
+<li><a title="Квартиры посуточно в Шымкенте цены, фото" href="/page/35729">Шымкент</a></li>
+</ul>
+</li>
+<li><span>Коммерческая</span>
+<ul>
+<li><a href="/page/94">Торговые помещения</a></li>
+<li><a href="/page/96">Офисы</a></li>
+<li><span>Офисы в новостройках</span>
+<ul>
+<li><a href="/kupit-office-novostroyki-astana">Астана</a></li>
+<li><a href="/kupit-office-novostroyki-almaty">Алматы</a></li>
+<li><a href="/kupit-office-novostroyki-aktau">Актау</a></li>
+<li><a href="/kupit-office-novostroyki-atyrau">Атырау</a></li>
+<li><a href="/kupit-office-novostroyki-shimkent">Шымкент</a></li>
+</ul>
+</li>
+<li><span>Машиноместа</span>
+<ul>
+<li><a href="/kupit-carparking-novostroyki-astana">Астана</a></li>
+<li><a href="/kupit-carparking-novostroyki-almaty">Алматы</a></li>
+<li><a href="/kupit-carparking-novostroyki-atyrau">Атырау</a></li>
+<li><a href="/kupit-carparking-novostroyki-shimkent">Шымкент</a></li>
+</ul>
+</li>
+<li><span>Кладовки в новостройках</span>
+<ul>
+<li><a href="/kupit-pantry-novostroyki-astana">Астана</a></li>
+<li><a href="/kupit-pantry-novostroyki-almaty">Алматы</a></li>
+<li><a href="/kupit-pantry-novostroyki-aktau">Актау</a></li>
+<li><a href="/kupit-pantry-novostroyki-atyrau">Атырау</a></li>
+<li><a href="/kupit-pantry-novostroyki-shimkent">Шымкент</a></li>
+</ul>
+</li>
+<li><a href="/page/97">Прочая недвижимость</a></li>
+</ul>
+</li>
+<li><span>Еще</span>
+<ul>
+<li><a href="/statyi">Статьи</a></li>
+<li><a href="/page/5?filterCityId=1&filterPriceType=1&filterObjType=1">Поиск на карте</a></li>
+<li><a href="/agency/1">Агентства недвижимости</a></li>
+<li><a href="/page/30">Ипотечный калькулятор</a></li>
+</ul>
+</li>
+<li><span>Помощь</span>
+<ul>
+<li><a href="/faq/6">Как зарегистрировать аккаунт?</a></li>
+<li><a href="/faq/10">Что делать, если письмо с подтверждением о регистрации не пришло?</a></li>
+<li><a href="/faq/14">Как поменять пароль для входа?</a></li>
+<li><a href="/faq/7">Как добавить объявление?</a></li>
+<li><a href="/faq/8">Как продлить объявление?</a></li>
+<li><a href="/faq/18">Как пополнить баланс?</a></li>
+<li><a href="/faq/23">Как добавить сайт в исключения Adblock</a></li>
+<li><a href="/faq/21">Автоматическая загрузка объявлений, XML</a></li>
+<li><a href="/faq/9">Что такое Личный кабинет? Зачем он нужен?</a></li>
+<li><a href="/faq/11">Можно ли поменять персональные данные в Личном кабинете?</a></li>
+<li><a href="/faq/16">Избранное. Зачем оно? Как им пользоваться?</a></li>
+<li><a href="/faq/12">Не правильно определяется положение объекта недвижимости на карте?</a></li>
+</ul>
+</li>
+<li><a rel="nofollow" href="/contact-us">Связаться с нами</a></li>
+<li><a rel="nofollow" href="/userlistings"><span class="flaticon-user"></span> Личный кабинет</a></li>
+<li><a id="menuFav" href="javascript:void(0);" data-toggle="modal" data-target=".bd-example-modal-lg">Избранное</a></li>
+<li><span>Язык</span>
+<ul>
+<li><a href="/kk/">Қаз</a></li>
+<li><a href="/">Рус</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+<div class="home-four">
+<div class="container-fluid p0">
+<div class="row">
+<div class="col-lg-12">
+<div class="main-banner-wrapper" style="background-image: -webkit-linear-gradient( -36deg, rgb(58,104,171) 0%, rgb(240,73,73) 100%);height:700px;">
+<div class="owl-theme owl-carousel">
+</div>
+<div class="carousel-btn-block banner-carousel-btn">
+<span style="display: none;" class="carousel-btn left-btn"><i class="flaticon-left-arrow-1 left"></i></span>
+<span style="display: none;" class="carousel-btn right-btn"><i class="flaticon-right-arrow right"></i></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container home_iconbox_container">
+<div class="row posr">
+<div class="col-lg-12">
+<div class="home_content home4">
+<div class="home-text text-center">
+<h2 class="fz55">Недвижимость Казахстана</h2>
+<p class="fz18 color-white">Ваш дом где-то рядом</p>
+</div>
+<div class="home_adv_srch_opt home4">
+<ul class="nav nav-pills" id="pills-tab" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Купить</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Снять</a>
+</li>
+</ul>
+<div class="tab-content home1_adsrchfrm" id="pills-tabContent">
+<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+<form id="search-form" class="" action="/quicksearch/main/mainsearch" method="get">
+<div class="home1-advnc-search home4">
+<input name="apType" type="hidden" id="apType" value="1">
+<ul class="h1ads_1st_list mb0">
+<li class="list-inline-item">
+<div class="search_option_two">
+<div class="candidate_revew_select">
+<select class="selectpicker w100 show-tick searchField" name="objType" id="objType">
+<option value="1">квартиры (вторичка)</option>
+<option value="16">квартиры в новостройках</option>
+<option value="4">комнаты</option>
+<option value="7">гостиницы</option>
+<option value="2">дома/коттеджи</option>
+<option value="15">дачи</option>
+<option value="13">таунхаусы</option>
+<option value="5">офисы</option>
+<option value="12">гаражи</option>
+<option value="9">торговые помещения</option>
+<option value="10">промбазы, склады, заводы</option>
+<option value="8">земельные участки</option>
+<option value="14">промышленные земли</option>
+<option value="11">готовый бизнес</option>
+<option value="6">прочая недвижимость</option>
+</select>                                                    </div>
+</div>
+</li>
+<li class="list-inline-item">
+<div class="search_option_two">
+<div class="candidate_revew_select">
+<select name="city[]" id="city" class="selectpicker w100 show-tick searchField">
+<option value="1">Астана</option><option value="2">Алматы</option><option value="8">Актау</option><option value="12">Актобе</option><option value="10">Атырау</option><option value="7">Караганда</option><option value="29">Капчагай</option><option value="17">Костанай</option><option value="28">Кокшетау</option><option value="18">Кызылорда</option><option value="3">Павлодар</option><option value="23">Семей</option><option value="24">Тараз</option><option value="30">Талдыкорган</option><option value="31">Темиртау</option><option value="32">Туркестан</option><option value="26">Петропавловск</option><option value="5">Усть-Каменогорск</option><option value="25">Уральск</option><option value="27">Шымкент</option>                                                        </select>
+</div>
+</div>
+</li>
+<li class="list-inline-item width150main">
+<div class="form-group">
+<input name="price_Min" style="width: 100%;" type="text" class="form-control" id="priceMin" placeholder="цена от">
+<label for=""></label>
+</div>
+</li>
+<li class="list-inline-item width150main">
+<div class="form-group" style="height: 50px;">
+<input name="price_Max" style="border-radius: 25px;padding-left: 20px;border: 1px solid #ebebeb;background-color: #ffffff;font-size: 14px;font-size: 14px;height: 50px;width:100%;" type="text" class="form-control" id="priceMax" placeholder="цена до">
+<label for=""></label>
+</div>
+</li>
+<li class="custome_fields_520 list-inline-item">
+<div class="navbered">
+<div class="mega-dropdown home4">
+<span id="show_advbtn" class="dropbtn">Ещё <i class="flaticon-more pl10 flr-520"></i></span>
+<div class="dropdown-content">
+<div class="row p15">
+<div class="col-lg-12">
+<h4 class="text-thm3">Расширенный поиск</h4>
+</div>
+<div class="row p15 pt0-xsd" style="width: 100%;">
+<div class="col-lg-11 col-xl-10">
+<ul class="apeartment_area_list mb0">
+<li class="list-inline-item">
+<div class="candidate_revew_select">
+<select class="selectpicker w100 show-tick searchField" name="rooms" id="rooms">
+<option value="0" selected="selected">любое кол-во комнат</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4 и более</option>
+</select>                                                                                </div>
+</li>
+<li class="search_area">
+<div class="form-group">
+<input style="border-radius: 8px;    border: 1px solid #ebebeb;height: 50px;line-height: 40px;font-size: 14px;width: 190px;" id="squareTo" name="square" type="text" class="form-control" id="squareTo" placeholder="площадь до">
+</div>
+</li>
+<li class="list-inline-item">
+<div class="candidate_revew_select">
+<select class="selectpicker w100 show-tick searchField" name="floor" id="floor">
+<option value="0" selected="selected">любой этаж</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+<option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+<option value="44">44</option>
+<option value="45">45</option>
+</select>                                                                                </div>
+</li>
+<li class="search_area search-term">
+<div class="form-group">
+<input style="border-radius: 8px;    border: 1px solid #ebebeb;height: 50px;line-height: 40px;font-size: 14px;width: 190px;" type="text" class="form-control" id="search_term_text" placeholder="Поиск по описанию или адресу">
+<input type="hidden" value="0" id="do-term-search" name="do-term-search">
+<label for="searchTerm"><span onclick="prepareSearch(); return false;" class=""></span></label>
+</div>
+</li>
+</ul>
+</div>
+<div class="col-lg-1 col-xl-2">
+<div class="mega_dropdown_content_closer">
+<h5 class="text-thm text-right mt15"><span id="hide_advbtn" class="curp">Свернуть</span></h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="list-inline-item">
+<div class="search_option_button">
+<button type="submit" class="btn btn-thm3">Найти</button>
+</div>
+</li>
+</ul>
+</div>
+</form>
+</div>
+<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+<form id="search-form" class="" action="/quicksearch/main/mainsearch" method="get">
+<div class="home1-advnc-search home4">
+<ul class="h1ads_1st_list mb0">
+<li class="list-inline-item">
+<div class="search_option_two">
+<div class="candidate_revew_select">
+<select class="selectpicker w100 show-tick searchField" name="objType" id="objType">
+<option value="1">квартиры (вторичка)</option>
+<option value="16">квартиры в новостройках</option>
+<option value="4">комнаты</option>
+<option value="7">гостиницы</option>
+<option value="2">дома/коттеджи</option>
+<option value="15">дачи</option>
+<option value="13">таунхаусы</option>
+<option value="5">офисы</option>
+<option value="12">гаражи</option>
+<option value="9">торговые помещения</option>
+<option value="10">промбазы, склады, заводы</option>
+<option value="8">земельные участки</option>
+<option value="14">промышленные земли</option>
+<option value="11">готовый бизнес</option>
+<option value="6">прочая недвижимость</option>
+</select>                                                    </div>
+</div>
+</li>
+<li class="list-inline-item">
+<div class="search_option_two">
+<div class="candidate_revew_select">
+<select name="city[]" id="city" class="selectpicker w100 show-tick searchField">
+<option value="1">Астана</option><option value="2">Алматы</option><option value="8">Актау</option><option value="12">Актобе</option><option value="10">Атырау</option><option value="7">Караганда</option><option value="29">Капчагай</option><option value="17">Костанай</option><option value="28">Кокшетау</option><option value="18">Кызылорда</option><option value="3">Павлодар</option><option value="23">Семей</option><option value="24">Тараз</option><option value="30">Талдыкорган</option><option value="31">Темиртау</option><option value="32">Туркестан</option><option value="26">Петропавловск</option><option value="5">Усть-Каменогорск</option><option value="25">Уральск</option><option value="27">Шымкент</option>                                                        </select>
+</div>
+</div>
+</li>
+<li class="list-inline-item">
+<div class="search_option_two">
+<div class="candidate_revew_select">
+<select class="selectpicker w100 show-tick searchField" name="rooms" id="rooms">
+<option value="0" selected="selected">любое кол-во комнат</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4 и более</option>
+</select>                                                    </div>
+</div>
+</li>
+<li class="list-inline-item">
+<div class="search_option_two">
+<div class="candidate_revew_select">
+<select class="selectpicker w100 show-tick searchField" name="apType" id="apType" tabindex="-98">
+<option value="3">аренда посуточная</option>
+<option value="2">аренда почасовая</option>
+<option value="5">аренда долгосрочная</option>
+</select>
+</div>
+</div>
+</li>
+<li class="custome_fields_520 list-inline-item">
+<div class="navbered">
+<div class="mega-dropdown home3">
+<span id="show_advbtn2" class="dropbtn">Ещё <i class="flaticon-more pl10 flr-520"></i></span>
+<div class="dropdown-content">
+<div class="row p15">
+<div class="col-lg-12">
+<h4 class="text-thm3">Расширенный поиск</h4>
+</div>
+<div class="row p15 pt0-xsd" style="width: 100%;align-items: center;">
+<div class="col-lg-11 col-xl-10">
+<ul class="apeartment_area_list mb0">
+<li class="search_area">
+<div class="form-group">
+<input style="border-radius: 8px;    border: 1px solid #ebebeb;height: 50px;line-height: 40px;font-size: 14px;" id="squareTo" name="price_Min" type="text" class="form-control" id="squareTo" placeholder="цена от">
+</div>
+</li>
+<li class="search_area">
+<div class="form-group">
+<input style="border-radius: 8px;    border: 1px solid #ebebeb;height: 50px;line-height: 40px;font-size: 14px;" id="squareTo" name="price_Max" type="text" class="form-control" id="squareTo" placeholder="цена до">
+</div>
+</li>
+<li class="search_area">
+<div class="form-group">
+<input style="border-radius: 8px;    border: 1px solid #ebebeb;height: 50px;line-height: 40px;font-size: 14px;" id="squareTo" name="square" type="text" class="form-control" id="squareTo" placeholder="площадь до">
+</div>
+</li>
+<li class="list-inline-item">
+<div class="candidate_revew_select">
+<select class="selectpicker w100 show-tick searchField" name="floor" id="floor">
+<option value="0" selected="selected">любой этаж</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+<option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+<option value="44">44</option>
+<option value="45">45</option>
+</select>                                                                                </div>
+</li>
+</ul>
+</div>
+<div class="col-lg-1 col-xl-2">
+<div class="mega_dropdown_content_closer">
+<h5 class="text-thm text-right mt15"><span id="hide_advbtn" class="curp">Свернуть</span></h5>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="list-inline-item">
+<div class="search_option_button">
+<button type="submit" class="btn btn-thm3">Найти</button>
+</div>
+</li>
+</ul>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section id="best-property" class="our-listing bgc-f7 pb30-991">
+<div class="container ovh">
+<div class="row">
+<div class="col-lg-12">
+<div class="row">
+<div class="col-sm-6 col-lg-4 col-xl-4">
+<div class="feat_property home7 style4 ">
+<div class="thumb up_in_search">
+<div class="fp_single_item_slider" style="width: 100%;">
+<div class="item">
+<a rel="nofollow" href="https://nedvizhimostpro.kz/property/264266"><img data-src="/uploads/objects/264266/modified/thumb_300x200_3a12aa3106956e60a200181f917357a7.jpg" src="/uploads/objects/264266/modified/full_3a12aa3106956e60a200181f917357a7.jpg" class="lozad img-whp" style="width: 100%; min-height: 249px; display: inline;" alt=": 1 комнатная квартира посуточно на Сауран 10Б на Nedvizhimostpro.kz" /></a>                                        </div>
+</div>
+<div class="thmb_cntnt style2">
+<ul class="tag mb0">
+<li class="list-inline-item" style="color: #fefefe;font-size: 14px;background-color: #1e9ed9;">Аренда</li>
+</ul>
+</div>
+<div class="thmb_cntnt style3">
+<ul class="icon mb0">
+<li class="list-inline-item"><a data-lang="ru" href="javascript:void(0)" data-parid="264266" id="favText" class="tofavor geodir_save-btn tolt" style="text-decoration: none;"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="details " style="min-height: 260px;">
+<div class="tc_content">
+<h3 class="fp_price">
+15 000  <small>₸ в сутки</small></h3>
+<div style="height: 70px;">
+<h4><a class="offer" href="https://nedvizhimostpro.kz/property/264266">1 комнатная квартира посуточно на Сауран 10Б</a></h4>
+</div>
+<p><span class="flaticon-placeholder"></span> Астана</p>
+<ul class="prop_details mb0">
+<li style="color: #484848;" class="list-inline-item"><i style="color: #484848;" class="fa fa-building-o" aria-hidden="true"></i> <span>7 этаж 18 этажного дома</span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-arrows-alt" aria-hidden="true"></i> <span>общая площадь 45 м<sup>2</sup></span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-columns" aria-hidden="true"></i> <span>спальные места: 4</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-4">
+<div class="feat_property home7 style4 ">
+<div class="thumb up_in_search">
+<div class="fp_single_item_slider" style="width: 100%;">
+<div class="item">
+<a rel="nofollow" href="https://nedvizhimostpro.kz/property/338315"><img data-src="" src="/uploads/objects/338315/modified/full_80b097bf03c945ca88955e438f0f9579.jpg" class="lozad img-whp" style="width: 100%; min-height: 249px; display: inline;" alt=": 1 комнатная квартира посуточно на Бектурова 3/3 на Nedvizhimostpro.kz" /></a>                                        </div>
+</div>
+<div class="thmb_cntnt style2">
+<ul class="tag mb0">
+<li class="list-inline-item" style="color: #fefefe;font-size: 14px;background-color: #1e9ed9;">Аренда</li>
+</ul>
+</div>
+<div class="thmb_cntnt style3">
+<ul class="icon mb0">
+<li class="list-inline-item"><a data-lang="ru" href="javascript:void(0)" data-parid="338315" id="favText" class="tofavor geodir_save-btn tolt" style="text-decoration: none;"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="details " style="min-height: 260px;">
+<div class="tc_content">
+<h3 class="fp_price">
+15 000  <small>₸ в сутки</small></h3>
+<div style="height: 70px;">
+<h4><a class="offer" href="https://nedvizhimostpro.kz/property/338315">1 комнатная квартира посуточно на Бектурова 3/3</a></h4>
+</div>
+<p><span class="flaticon-placeholder"></span> Астана</p>
+<ul class="prop_details mb0">
+<li style="color: #484848;" class="list-inline-item"><i style="color: #484848;" class="fa fa-building-o" aria-hidden="true"></i> <span>4 этаж 14 этажного дома</span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-arrows-alt" aria-hidden="true"></i> <span>общая площадь 45 м<sup>2</sup></span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-columns" aria-hidden="true"></i> <span>спальные места: 5</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-4">
+<div class="feat_property home7 style4 ">
+<div class="thumb up_in_search">
+<div class="fp_single_item_slider" style="width: 100%;">
+<div class="item">
+<a rel="nofollow" href="https://nedvizhimostpro.kz/property/338316"><img data-src="" src="/uploads/objects/338316/modified/full_43997b000db43cfd1c96fcdfe66c7a59.jpg" class="lozad img-whp" style="width: 100%; min-height: 249px; display: inline;" alt=": 1 комнатная квартира посуточно в ЖК Алматау на Nedvizhimostpro.kz" /></a>                                        </div>
+</div>
+<div class="thmb_cntnt style2">
+<ul class="tag mb0">
+<li class="list-inline-item" style="color: #fefefe;font-size: 14px;background-color: #1e9ed9;">Аренда</li>
+</ul>
+</div>
+<div class="thmb_cntnt style3">
+<ul class="icon mb0">
+<li class="list-inline-item"><a data-lang="ru" href="javascript:void(0)" data-parid="338316" id="favText" class="tofavor geodir_save-btn tolt" style="text-decoration: none;"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="details " style="min-height: 260px;">
+<div class="tc_content">
+<h3 class="fp_price">
+15 000  <small>₸ в сутки</small></h3>
+<div style="height: 70px;">
+<h4><a class="offer" href="https://nedvizhimostpro.kz/property/338316">1 комнатная квартира посуточно в ЖК Алматау</a></h4>
+</div>
+<p><span class="flaticon-placeholder"></span> Астана</p>
+<ul class="prop_details mb0">
+<li style="color: #484848;" class="list-inline-item"><i style="color: #484848;" class="fa fa-building-o" aria-hidden="true"></i> <span>14 этаж 19 этажного дома</span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-arrows-alt" aria-hidden="true"></i> <span>общая площадь 45 м<sup>2</sup></span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-columns" aria-hidden="true"></i> <span>спальные места: 4</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-4">
+<div class="feat_property home7 style4 ">
+<div class="thumb up_in_search">
+<div class="fp_single_item_slider" style="width: 100%;">
+<div class="item">
+<a rel="nofollow" href="https://nedvizhimostpro.kz/property/51416"><img data-src="/uploads/apartments/51416/pictures/1.jpg"                               
+alt=": 2 комнатная квартира посуточно в ЖК Лазурный квартал на Nedvizhimostpro.kz"
+class="lozad img-whp" style="width: 100%;min-height: 249px;" src="/images/default/fon1.jpg" /></a>                                        </div>
+</div>
+<div class="thmb_cntnt style2">
+<ul class="tag mb0">
+<li class="list-inline-item" style="color: #fefefe;font-size: 14px;background-color: #1e9ed9;">Аренда</li>
+</ul>
+</div>
+<div class="thmb_cntnt style3">
+<ul class="icon mb0">
+<li class="list-inline-item"><a data-lang="ru" href="javascript:void(0)" data-parid="51416" id="favText" class="tofavor geodir_save-btn tolt" style="text-decoration: none;"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="details " style="min-height: 260px;">
+<div class="tc_content">
+<h3 class="fp_price">
+15 000  <small>₸ в сутки</small></h3>
+<div style="height: 70px;">
+<h4><a class="offer" href="https://nedvizhimostpro.kz/property/51416">2 комнатная квартира посуточно в ЖК Лазурный квартал</a></h4>
+</div>
+<p><span class="flaticon-placeholder"></span> Астана</p>
+<ul class="prop_details mb0">
+<li style="color: #484848;" class="list-inline-item"><i style="color: #484848;" class="fa fa-building-o" aria-hidden="true"></i> <span>8 этаж 24 этажного дома</span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-arrows-alt" aria-hidden="true"></i> <span>общая площадь 60 м<sup>2</sup></span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-columns" aria-hidden="true"></i> <span>спальные места: 4</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-4">
+<div class="feat_property home7 style4 ">
+<div class="thumb up_in_search">
+<div class="fp_single_item_slider" style="width: 100%;">
+<div class="item">
+<a rel="nofollow" href="https://nedvizhimostpro.kz/property/114352"><picture style="width: 100%;"><source srcset="/uploads/apartments/114352/pictures/173c2e475109.jpeg" type="image/webp"><img data-src="/uploads/apartments/114352/pictures/173c2e475109.jpeg"                               
+alt=": 2 комнатная квартира посуточно на Сарайшык 7/1 на Nedvizhimostpro.kz"
+class="lozad img-whp" style="width: 100%;min-height: 249px;" src="/images/default/fon1.jpg" /></picture></a>                                        </div>
+</div>
+<div class="thmb_cntnt style2">
+<ul class="tag mb0">
+<li class="list-inline-item" style="color: #fefefe;font-size: 14px;background-color: #1e9ed9;">Аренда</li>
+</ul>
+</div>
+<div class="thmb_cntnt style3">
+<ul class="icon mb0">
+<li class="list-inline-item"><a data-lang="ru" href="javascript:void(0)" data-parid="114352" id="favText" class="tofavor geodir_save-btn tolt" style="text-decoration: none;"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="details " style="min-height: 260px;">
+<div class="tc_content">
+<h3 class="fp_price">
+20 000  <small>₸ в сутки</small></h3>
+<div style="height: 70px;">
+<h4><a class="offer" href="https://nedvizhimostpro.kz/property/114352">2 комнатная квартира посуточно на Сарайшык 7/1</a></h4>
+</div>
+<p><span class="flaticon-placeholder"></span> Астана</p>
+<ul class="prop_details mb0">
+<li style="color: #484848;" class="list-inline-item"><i style="color: #484848;" class="fa fa-building-o" aria-hidden="true"></i> <span>10 этаж 14 этажного дома</span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-arrows-alt" aria-hidden="true"></i> <span>общая площадь 70 м<sup>2</sup></span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-columns" aria-hidden="true"></i> <span>спальные места: 5</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-4">
+<div class="feat_property home7 style4 ">
+<div class="thumb up_in_search">
+<div class="fp_single_item_slider" style="width: 100%;">
+<div class="item">
+<a rel="nofollow" href="https://nedvizhimostpro.kz/property/245429"><img data-src="/uploads/objects/245429/modified/thumb_300x200_92bf55e66eb1eb9973a34bff2fa4dce9.jpg" src="/uploads/objects/245429/modified/full_92bf55e66eb1eb9973a34bff2fa4dce9.jpg" class="lozad img-whp" style="width: 100%; min-height: 249px; display: inline;" alt=": 3 комнатная посуточно Абу Даби Плаза на Nedvizhimostpro.kz" /></a>                                        </div>
+</div>
+<div class="thmb_cntnt style2">
+<ul class="tag mb0">
+<li class="list-inline-item" style="color: #fefefe;font-size: 14px;background-color: #1e9ed9;">Аренда</li>
+</ul>
+</div>
+<div class="thmb_cntnt style3">
+<ul class="icon mb0">
+<li class="list-inline-item"><a data-lang="ru" href="javascript:void(0)" data-parid="245429" id="favText" class="tofavor geodir_save-btn tolt" style="text-decoration: none;"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="details " style="min-height: 260px;">
+<div class="tc_content">
+<h3 class="fp_price">
+30 000  <small>₸ в сутки</small></h3>
+<div style="height: 70px;">
+<h4><a class="offer" href="https://nedvizhimostpro.kz/property/245429">3 комнатная посуточно Абу Даби Плаза</a></h4>
+</div>
+<p><span class="flaticon-placeholder"></span> Астана</p>
+<ul class="prop_details mb0">
+<li style="color: #484848;" class="list-inline-item"><i style="color: #484848;" class="fa fa-building-o" aria-hidden="true"></i> <span>2 этаж 10 этажного дома</span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-arrows-alt" aria-hidden="true"></i> <span>общая площадь 90 м<sup>2</sup></span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-columns" aria-hidden="true"></i> <span>спальные места: 6</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-4">
+<div class="feat_property home7 style4 ">
+<div class="thumb up_in_search">
+<div class="fp_single_item_slider" style="width: 100%;">
+<div class="item">
+<picture style="width: 100%;"><source srcset="/uploads/objects/615239/modified/63dd5ccac3227.webp" type="image/webp"><a rel="nofollow" href="https://nedvizhimostpro.kz/property/615239"><img data-src="/uploads/objects/615239/modified/thumb_300x200_59a9adcc1ace30b4b195aa128084a3b8.jpg" src="/uploads/objects/615239/modified/full_59a9adcc1ace30b4b195aa128084a3b8.jpg" class="lozad img-whp" style="width: 100%; min-height: 249px; display: inline;" alt=": 1 комнатная квартира посуточно в ЖК Mechta на Nedvizhimostpro.kz" /></a></picture>                                        </div>
+</div>
+<div class="thmb_cntnt style2">
+<ul class="tag mb0">
+<li class="list-inline-item" style="color: #fefefe;font-size: 14px;background-color: #1e9ed9;">Аренда</li>
+</ul>
+</div>
+<div class="thmb_cntnt style3">
+<ul class="icon mb0">
+<li class="list-inline-item"><a data-lang="ru" href="javascript:void(0)" data-parid="615239" id="favText" class="tofavor geodir_save-btn tolt" style="text-decoration: none;"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="details " style="min-height: 260px;">
+<div class="tc_content">
+<h3 class="fp_price">
+18 000  <small>₸ в сутки</small></h3>
+<div style="height: 70px;">
+<h4><a class="offer" href="https://nedvizhimostpro.kz/property/615239">1 комнатная квартира посуточно в ЖК Mechta</a></h4>
+</div>
+<p><span class="flaticon-placeholder"></span> Астана</p>
+<ul class="prop_details mb0">
+<li style="color: #484848;" class="list-inline-item"><i style="color: #484848;" class="fa fa-building-o" aria-hidden="true"></i> <span>3 этаж 10 этажного дома</span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-arrows-alt" aria-hidden="true"></i> <span>общая площадь 38 м<sup>2</sup></span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-columns" aria-hidden="true"></i> <span>спальные места: 2</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-4">
+<div class="feat_property home7 style4 ">
+<div class="thumb up_in_search">
+<div class="fp_single_item_slider" style="width: 100%;">
+<div class="item">
+<picture style="width: 100%;"><source srcset="/uploads/objects/615238/modified/63dd5a0dd75d9.webp" type="image/webp"><a rel="nofollow" href="https://nedvizhimostpro.kz/property/615238"><img data-src="" src="/uploads/objects/615238/modified/full_755071878d362b5a5a7d3f49c6d5d8a7.jpg" class="lozad img-whp" style="width: 100%; min-height: 249px; display: inline;" alt=": 1 комнатная квартира посуточно в ЖК  Aq-Didar на Nedvizhimostpro.kz" /></a></picture>                                        </div>
+</div>
+<div class="thmb_cntnt style2">
+<ul class="tag mb0">
+<li class="list-inline-item" style="color: #fefefe;font-size: 14px;background-color: #1e9ed9;">Аренда</li>
+</ul>
+</div>
+<div class="thmb_cntnt style3">
+<ul class="icon mb0">
+<li class="list-inline-item"><a data-lang="ru" href="javascript:void(0)" data-parid="615238" id="favText" class="tofavor geodir_save-btn tolt" style="text-decoration: none;"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="details " style="min-height: 260px;">
+<div class="tc_content">
+<h3 class="fp_price">
+18 000  <small>₸ в сутки</small></h3>
+<div style="height: 70px;">
+<h4><a class="offer" href="https://nedvizhimostpro.kz/property/615238">1 комнатная квартира посуточно в ЖК  Aq-Didar</a></h4>
+</div>
+<p><span class="flaticon-placeholder"></span> Астана</p>
+<ul class="prop_details mb0">
+<li style="color: #484848;" class="list-inline-item"><i style="color: #484848;" class="fa fa-building-o" aria-hidden="true"></i> <span>6 этаж 9 этажного дома</span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-arrows-alt" aria-hidden="true"></i> <span>общая площадь 41 м<sup>2</sup></span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-columns" aria-hidden="true"></i> <span>спальные места: 2</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-4">
+<div class="feat_property home7 style4 ">
+<div class="thumb up_in_search">
+<div class="fp_single_item_slider" style="width: 100%;">
+<div class="item">
+<picture style="width: 100%;"><source srcset="/uploads/objects/718300/modified/64e87d35d1a2e.webp" type="image/webp"><a rel="nofollow" href="https://nedvizhimostpro.kz/property/718300"><img data-src="" src="/uploads/objects/718300/modified/full_baa5dbb6d51e8d0d64846198625515c7.jpeg" class="lozad img-whp" style="width: 100%; min-height: 249px; display: inline;" alt=": Отель Grand Hotel Burabay на побережье курортной зоны Боровое на Nedvizhimostpro.kz" /></a></picture>                                        </div>
+</div>
+<div class="thmb_cntnt style2">
+<ul class="tag mb0">
+<li class="list-inline-item" style="color: #fefefe;font-size: 14px;background-color: #f04949;">Продажа</li>
+</ul>
+</div>
+<div class="thmb_cntnt style3">
+<ul class="icon mb0">
+<li class="list-inline-item"><a data-lang="ru" href="javascript:void(0)" data-parid="718300" id="favText" class="tofavor geodir_save-btn tolt" style="text-decoration: none;"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="details " style="min-height: 260px;">
+<div class="tc_content">
+<h3 class="fp_price">
+1 624 950 000  <small>₸ </small></h3>
+<div style="height: 70px;">
+<h4><a class="offer" href="https://nedvizhimostpro.kz/property/718300">Отель Grand Hotel Burabay на побережье курортной зоны Боровое</a></h4>
+</div>
+<p><span class="flaticon-placeholder"></span> Астана</p>
+<ul class="prop_details mb0">
+<li style="color: #484848;"><i style="color: #484848;" class="fa fa-arrows-alt" aria-hidden="true"></i> <span>общая площадь 3250 м<sup>2</sup></span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-4">
+<div class="feat_property home7 style4 ">
+<div class="thumb up_in_search">
+<div class="fp_single_item_slider" style="width: 100%;">
+<div class="item">
+<picture style="width: 100%;"><source srcset="/uploads/objects/710846/modified/64edcb43727bd.webp" type="image/webp"><a rel="nofollow" href="https://nedvizhimostpro.kz/property/710846"><img data-src="/uploads/objects/710846/modified/thumb_300x200_eff84eebbd919e9ba8814f090dcceba5.jpeg" src="/uploads/objects/710846/modified/full_eff84eebbd919e9ba8814f090dcceba5.jpeg" class="lozad img-whp" style="width: 100%; min-height: 249px; display: inline;" alt=": Отель Алем в Боровое на Nedvizhimostpro.kz" /></a></picture>                                        </div>
+</div>
+<div class="thmb_cntnt style2">
+<ul class="tag mb0">
+<li class="list-inline-item" style="color: #fefefe;font-size: 14px;background-color: #f04949;">Продажа</li>
+</ul>
+</div>
+<div class="thmb_cntnt style3">
+<ul class="icon mb0">
+<li class="list-inline-item"><a data-lang="ru" href="javascript:void(0)" data-parid="710846" id="favText" class="tofavor geodir_save-btn tolt" style="text-decoration: none;"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="details " style="min-height: 260px;">
+<div class="tc_content">
+<h3 class="fp_price">
+1 341 650 000  <small>₸ </small></h3>
+<div style="height: 70px;">
+<h4><a class="offer" href="https://nedvizhimostpro.kz/property/710846">Отель Алем в Боровое</a></h4>
+</div>
+<p><span class="flaticon-placeholder"></span> Астана</p>
+<ul class="prop_details mb0">
+<li style="color: #484848;" class="list-inline-item"><i style="color: #484848;" class="fa fa-building-o" aria-hidden="true"></i> <span>5 этаж 5 этажного дома</span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-arrows-alt" aria-hidden="true"></i> <span>общая площадь 2683 м<sup>2</sup></span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-4">
+<div class="feat_property home7 style4 ">
+<div class="thumb ">
+<div class="fp_single_item_slider" style="width: 100%;">
+<div class="item">
+<picture style="width: 100%;"><source srcset="/uploads/objects/720132/modified/64f59bd76aa18.webp" type="image/webp"><a rel="nofollow" href="https://nedvizhimostpro.kz/property/720132"><img data-src="/uploads/objects/720132/modified/thumb_300x200_0da38822dbddd7b0edf6bf8d643d2513.jpeg" src="/uploads/objects/720132/modified/full_0da38822dbddd7b0edf6bf8d643d2513.jpeg" class="lozad img-whp" style="width: 100%; min-height: 249px; display: inline;" alt=":  Нурлы Тау - офис 1500 кв. м на Nedvizhimostpro.kz" /></a></picture>                                        </div>
+</div>
+<div class="thmb_cntnt style2">
+<ul class="tag mb0">
+<li class="list-inline-item" style="color: #fefefe;font-size: 14px;background-color: #1e9ed9;">Аренда</li>
+</ul>
+</div>
+<div class="thmb_cntnt style3">
+<ul class="icon mb0">
+<li class="list-inline-item"><a data-lang="ru" href="javascript:void(0)" data-parid="720132" id="favText" class="tofavor geodir_save-btn tolt" style="text-decoration: none;"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="details " style="min-height: 260px;">
+<div class="tc_content">
+<h3 class="fp_price">
+13 500  <small>₸ в месяц</small></h3>
+<div style="height: 70px;">
+<h4><a class="offer" href="https://nedvizhimostpro.kz/property/720132">Нурлы Тау - офис 1500 кв. м.. </a></h4>
+</div>
+<p><span class="flaticon-placeholder"></span> Алматы</p>
+<ul class="prop_details mb0">
+<li style="color: #484848;" class="list-inline-item"><i style="color: #484848;" class="fa fa-building-o" aria-hidden="true"></i> <span>2 этаж 6 этажного дома</span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-arrows-alt" aria-hidden="true"></i> <span>общая площадь 1500 м<sup>2</sup></span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6 col-lg-4 col-xl-4">
+<div class="feat_property home7 style4 ">
+<div class="thumb ">
+<div class="fp_single_item_slider" style="width: 100%;">
+<div class="item">
+<picture style="width: 100%;"><source srcset="/uploads/objects/720131/modified/64f58a4da9a78.webp" type="image/webp"><a rel="nofollow" href="https://nedvizhimostpro.kz/property/720131"><img data-src="/uploads/objects/720131/modified/thumb_300x200_edf15833297634bfa1144cf24af9ef09.jpg" src="/uploads/objects/720131/modified/full_edf15833297634bfa1144cf24af9ef09.jpg" class="lozad img-whp" style="width: 100%; min-height: 249px; display: inline;" alt=": 4 комнатная квартира на Толе би 286/6 — Толе -Тлендиева на Nedvizhimostpro.kz" /></a></picture>                                        </div>
+</div>
+<div class="thmb_cntnt style2">
+<ul class="tag mb0">
+<li class="list-inline-item" style="color: #fefefe;font-size: 14px;background-color: #f04949;">Продажа</li>
+</ul>
+</div>
+<div class="thmb_cntnt style3">
+<ul class="icon mb0">
+<li class="list-inline-item"><a data-lang="ru" href="javascript:void(0)" data-parid="720131" id="favText" class="tofavor geodir_save-btn tolt" style="text-decoration: none;"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="details " style="min-height: 260px;">
+<div class="tc_content">
+<h3 class="fp_price">
+83 900 000  <small>₸ </small></h3>
+<div style="height: 70px;">
+<h4><a class="offer" href="https://nedvizhimostpro.kz/property/720131">4 комнатная квартира на Толе би 286/6 — Толе -Тлендиева</a></h4>
+</div>
+<p><span class="flaticon-placeholder"></span> Алматы</p>
+<ul class="prop_details mb0">
+<li style="color: #484848;" class="list-inline-item"><i style="color: #484848;" class="fa fa-building-o" aria-hidden="true"></i> <span>21 этаж 21 этажного дома</span></li><li style="color: #484848;"><i style="color: #484848;" class="fa fa-arrows-alt" aria-hidden="true"></i> <span>общая площадь 142 м<sup>2</sup></span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-12 mt20">
+<div class="mbp_pagination">
+<ul class="page_navigation" id=""><li class="page-item active"><a href="/">1</a></li>
+<li class="page-item"><a href="/p-2">2</a></li>
+<li class="page-item"><a href="/p-3">3</a></li>
+<li class="page-item"><a href="/p-4">4</a></li>
+<li class="page-item"><a href="/p-5">5</a></li></ul>                        </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="col-lg-12">
+<div class="terms_condition_grid desktop_only" style="border:none;column-count: 2;column-gap: 30px;">
+<div class="grids mb30">
+<h1 style="font-size: 1.25rem;color:#6c747a;">Лучшие предложения недвижимости Казахстана здесь!</h1>
+<p class="mb20"></p>
+<div class="destop_only1">
+<p style="color:#6c747a;">Nedvizhimostpro.Kz - сайт бесплатных объявлений о продаже, покупке, аренде квартир, домов, дач, земельных участков в Казахстане, а также информации о коммерческой недвижимости. На сайте у всех есть возможность купить, продать, сдать, снять или обменять недвижимость без посредников.
+</p>
+<noindex>
+<p style="color:#6c747a;">Как сдать, или продать недвижимость быстро из рук в руки спросите Вы? Конечно же, через Интернет. Разместите бесплатно свое объявление на нашем сайте и потенциальные арендаторы и покупатели обязательно позвонят Вам! Подать бесплатное объявление с Nedvizhimostpro.Kz в интернете проще простого. Вам потребуется совсем немного времени! Выберите тип недвижимости, раздел и город, напишите заголовок и текст объявления, укажите цену и характеристики жилья. Добавьте несколько фотографий — они помогут быстрее продать или сдать Ваше жилье.</p>
+<p style="color:#6c747a;">Многие мечтают о приобретении собственной квартиры или дома, и большинству удается реализовать свою мечту. Кроме этого, для некоторых людей операции с недвижимым имуществом является работой или бизнесом.</p>
+<p style="color:#6c747a;">Сайт Nedvizhimostpro.Kz создал место встречи для всех участников рынка недвижимости Казахстана. В не зависимости от того кто вы: брокер, владелец крупной риэлторской компании, продавец, покупатель, арендодатель или арендатор – наш сайт принесет вам пользу.</p>
+<p style="color:#6c747a;">Наш сайт дает вам постоянный доступ к актуальной базе объявлений. Каждое объявление на сайте содержит прямые контактные данные собственника или риэлтора, что позволит вам незамедлительно оформить
+аренду или покупку любого варианта из представленных в базе. Желаем выгодных покупок и успешных продаж!</p>
+</noindex>
+<span typeof="v:Breadcrumb"><a href="https://nedvizhimostpro.kz" rel="v:url" property="v:title">Недвижимость</a> ›</span>
+<span typeof="v:Breadcrumb"><a href="https://nedvizhimostpro.kz/#ads" rel="v:url" property="v:title">Вся недвижимость Казахстана!</a></span>
+</div>
+<p></p>
+</div>
+</div>
+</div>
+<script>
+$("#search_term_text").keyup(function(event) {
+if (event.keyCode == 13) {
+prepareSearch();
+}
+});
+function prepareSearch() {
+var term = $(".search-term input#search_term_text").val();
+if (term != '\u041F\u043E\u0438\u0441\u043A\x20\u043F\u043E\x20\u043E\u043F\u0438\u0441\u0430\u043D\u0438\u044E\x20\u0438\u043B\u0438\x20\u0430\u0434\u0440\u0435\u0441\u0443') {
+if (term.length >= 4) {
+term = term.split(" ");
+term = term.join("+");
+$("#do-term-search").val(1);
+window.location.replace("https://nedvizhimostpro.kz/quicksearch/main/mainsearch?term=" + term + "&do-term-search=1");
+} else {
+alert('Minimum\x204\x20characters.');
+}
+}
+}
+</script>		
+<section class="footer_one">
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 pr0 pl0">
+<div class="footer_about_widget">
+<p>Использование сайта означает согласие с Пользовательским соглашением и Политикой конфиденциальности Nedvizhimostpro.kz</p>
+</div>
+</div>
+<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+<div class="footer_qlink_widget">
+<ul class="list-unstyled">
+<li><a rel="nofollow" href="/page/34">О проекте</a></li>
+<li><a rel="nofollow" href="/page/6957">Партнеры</a>
+</li>
+</li>
+<li><a rel="nofollow" href="/faq">Помощь (faq)</a>
+</li>
+<li><a rel="nofollow" href="/site/register">Регистрация</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+<div class="footer_contact_widget">
+<ul class="list-unstyled">
+<li><a rel="nofollow" href="mailto:info@nedvizhimostpro.kz">info@nedvizhimostpro.kz</a></li>
+<li><a rel="nofollow" href="/page/60283">Политика конфиденциальности</a>
+</li>
+<li><a rel="nofollow" href="/page/6">Пользовательское соглашение</a>
+</ul>
+</div>
+</div>
+<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+<div class="footer_social_widget">
+<ul class="mb30">
+<li class="list-inline-item"><a rel="nofollow" href="https://www.instagram.com/nedvizhimostpro.kz"><i class="fa fa-instagram"></i></a></li>
+<li class="list-inline-item"><a rel="nofollow" href="https://www.facebook.com/Nedvizhimostpro.kz"><i class="fa fa-facebook"></i></a></li>
+<li class="list-inline-item"><a rel="nofollow" href="https://twitter.com/nedvizhimostpro"><i class="fa fa-twitter"></i></a></li>
+<li class="list-inline-item"><a rel="nofollow" href="https://vk.com/nedvizhimost_v_kz"><i class="fa fa-vk"></i></a></li>
+</ul>
+<div class="form-row align-items-center">
+<div style="margin-right: 20px;"><a href="https://play.google.com/store/apps/details?id=kz.nedvizhimostpro.myapplication&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img src="/images/design/google-play.svg"></a>
+</div>
+<div><a href="https://appgallery.huawei.com/#/app/C102946177"><img src="/images/design/app-gallery.svg"></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="footer_middle_area pt30 pb30">
+<div class="container">
+<div class="row">
+<div class="col-lg-6 col-xl-6">
+<div class="footer_menu_widget">
+<ul>
+<li class="list-inline-item"><a href="/page/8">Карта сайта</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-6 col-xl-6">
+<div class="copyright-widget text-right">
+<p>&copy;&nbsp; 2012-2023 Недвижимость. Все права защищены.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<a class="scrollToHome" href="#"><i class="flaticon-arrows"></i></a>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T65GNT001H"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+dataLayer.push(arguments);
+}
+gtag('js', new Date());
+gtag('config', 'G-T65GNT001H');
+</script>
+<script type="text/javascript">
+(function(m, e, t, r, i, k, a) {
+m[i] = m[i] || function() {
+(m[i].a = m[i].a || []).push(arguments)
+};
+m[i].l = 1 * new Date();
+k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ym(69146917, "init", {
+clickmap: true,
+trackLinks: true,
+accurateTrackBounce: true
+});
+</script>
+<noscript>
+<div><img src="https://mc.yandex.ru/watch/69146917" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "Organization",
+"legalName": "Nedvizhimostpro.kz",
+"url": "https://nedvizhimostpro.kz",
+"logo": "https://nedvizhimostpro.kz/images/logo_google.png",
+"sameAs": [
+"https://www.facebook.com/Nedvizhimostpro.kz",
+"https://www.instagram.com/nedvizhimostpro.kz/",
+"https://twitter.com/nedvizhimostpro"
+]
+}
+</script>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "WebSite",
+"url": "https://nedvizhimostpro.kz",
+"potentialAction": {
+"@type": "SearchAction",
+"target": "https://nedvizhimostpro.kz/quicksearch/main/mainsearch?term={search_term_string}&do-term-search=1",
+"query-input": "required name=search_term_string"
+}
+}
+</script>
+<script>
+$('#goMainPage').on('click', function(e) {
+e.preventDefault();
+var url = "/";
+$(location).attr('href', url);
+});
+function delItem(id) {
+var infav;
+infav = $.cookie("favorites");
+var favids = "";
+var link = "";
+var heart = "fa fa-heart-o";
+var heart_red = "fa fa-heart";
+var fav;
+var ids;
+var dex, idex;
+infav = $.cookie("favorites");
+//$(this).html('<i class="fa fa-minus-square"></i> Удалить из избранного');
+$(this).children("i").attr("class", heart_red);
+//$(this).style.backgroundColor = "#F5F5ED";
+if (!infav) {
+$.cookie("favorites", id, {
+path: '/'
+});
+var favids = "";
+} else {
+favids = infav.split("_");
+idex = favids.indexOf('null');
+if (idex > -1) {
+favids.splice(idex, 1);
+}
+var str_ids = "";
+var infavid = 0;
+for (var i = 0; i < favids.length; i++) {
+if (favids[i] != id) {
+if (i == 0 || str_ids == "")
+str_ids = favids[i];
+else
+str_ids += "_" + favids[i];
+} else {
+infavid = 1;
+$(this).children("i").attr("class", heart);
+}
+}
+if (infavid == 0) {
+if (str_ids != "")
+str_ids += "_" + id;
+else
+str_ids = id;
+}
+$.cookie("favorites", null, {
+path: '/'
+});
+$.cookie("favorites", str_ids, {
+path: '/'
+});
+}
+infav = $.cookie("favorites");
+favids = infav.split("_");
+link = infav.replace(/_+/gi, ",");
+//alert(favids.length);
+if (favids[0] == "") {
+$("#favicn").html('<i class="fa fa-heart-o"></i><a href=#></a>');
+$("#fav-sum").html('<a href="#tab-wish"> Избранное</a>');
+$("#favorite-main").html("");
+} else {
+var favSum = favids.length;
+$("#favicn").html("<i class='fa fa-heart-o'></i><span class='cart-btn_counter color-bg'>" + favSum + "</span><a href=\/category/searchbyid?id=" + link + "\"></a>");
+$("#fav-sum").html('<a href="#tab-wish"> Избранное <span>- ' + favids.length + '</span></a>');
+var ix = favids.indexOf('null');
+if (ix > -1) {
+favids.splice(ix, 1);
+}
+if (favids.length > 0) {
+$.ajax({
+url: '/apartments/main/wishlist',
+data: {
+ids: favids
+},
+dataType: "json",
+type: 'GET',
+success: function(res) {
+console.log(res);
+fav = "";
+var cur;
+for (var z = 0; z < favids.length; z++) {
+if (res[z]['price_type'] == '2') cur = ' тг/сут';
+else if (res[z]['price_type'] == '3') cur = ' тг/мес';
+else cur = ' тг';
+fav += '<li style="position: relative;display: flex;flex-wrap: wrap;padding: 10px 15px;background: #fff;border: 1px solid #eee;"><div class="widget-posts-img"><a href="/property/' + favids[z] + '"><img style="width:100px;height:66px;" src="' + res[z]['img']['link'] + '" alt=""></a></div><div class="widget-posts-descr" style="margin-left: 10px;"><h6><a href="/property/' + favids[z] + '">' + res[z]['title'] + '</a></h6><div style="text-align: left;" class="geodir-category-location fl-wrap"><i class="fas fa-map-marker-alt"></i> ' + res[z]['address_ru'] + '</div><div class="widget-posts-descr-price"><span>Цена: </span> ' + res[z]['price'].replace(/(\d)(?=(\d{3})+$)/g, '$1 ') + cur + ' </div><a style="position: absolute;top: 10px;right: 20px;" href="javascript:void(0)" onclick="delItem(' + favids[z] + ');" class="tofavor clear-wishlist"><i class="fa fa-trash-o" aria-hidden="true"></i></a></div></li>';
+}
+fav = fav.replace('undefined', '');;
+$("#favorite-main").html(fav);
+},
+error: function() {
+alert('Error');
+}
+});
+}
+}
+}
+</script>
+<script type="text/javascript" src="/assets/6cf6ee58/jquery-migrate-3.0.0.min.js"></script>
+<script type="text/javascript" src="/assets/6cf6ee58/popper.min.js"></script>
+<script type="text/javascript" src="/assets/6cf6ee58/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/6cf6ee58/jquery.mmenu.all.js"></script>
+<script type="text/javascript" src="/assets/6cf6ee58/ace-responsive-menu.js"></script>
+<script type="text/javascript" src="/assets/6cf6ee58/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="/assets/6cf6ee58/parallax.js"></script>
+<script type="text/javascript" src="/assets/6cf6ee58/scrollto.js"></script>
+<script type="text/javascript" src="/assets/6cf6ee58/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="/assets/6cf6ee58/jquery.counterup.js"></script>
+<script type="text/javascript" src="/assets/6cf6ee58/wow.min.js"></script>
+<script type="text/javascript" src="/assets/6cf6ee58/slider.js"></script>
+<script type="text/javascript" src="/assets/6cf6ee58/script.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/lozad/dist/lozad.min.js"></script>
+<script type="text/javascript" src="/js/jquery.dropdownPlain.js"></script>
+<script type="text/javascript">function setListShow(mode){				
+var urlsSwitching = {'block':'\x2F\x3Fls\x3Dblock','table':'\x2F\x3Fls\x3Dtable','map':'\x2F\x3Fls\x3Dmap','date':'\x2F\x3Fsort\x3Ddate_created','price':'\x2F\x3Fsort\x3Dprice'};				
+reloadApartmentList(urlsSwitching[mode]);				
+};
+function getGet(name) {
+var s = window.location.search;
+s = s.match(new RegExp(name + '=([^&=]+)'));
+return s ? s[1] : false;
+};
+if (getGet('ls')=='map') {
+$('#main-sort').hide();
+$('#menu-burger').hide();
+$('#cd-dropdown').hide();
+$('#searchShow').hide();
+$('.change_list_show').hide();	
+$('.change_list_show_1').toggle();			
+}
+function focusSubmit(elem) {
+elem.keypress(function(e) {
+if(e.which == 13) {
+$(this).blur();
+$("#btnleft").focus().click();
+}
+});
+}
+jQuery(function($) {
+focusSubmit($("select#objType"));
+focusSubmit($("select#rooms"));
+focusSubmit($("select#floor"));
+$("#loading").bind("ajaxSend", function(){
+$(this).show();
+}).bind("ajaxComplete", function(){
+$(this).hide();
+});
+const observer = lozad(); 
+observer.observe();
+});</script>
+</body>
+</html>

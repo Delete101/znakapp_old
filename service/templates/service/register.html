@@ -1,0 +1,21 @@
+{% extends "service/base.html" %}
+{% block content %}
+{% load bootstrap_tags %}
+
+
+<div class="container text-white mt-5 form-horizontal w-70">
+	<h1>Регистрация</h1>
+	{% if error_msg %}
+    <div class="alert alert-info" role="alert">
+    {{ error_msg }}
+    </div>
+    {% endif %}
+	<form method="POST">
+		{% csrf_token %}
+		{{register_form|as_bootstrap_horizontal:'pt-3 pb-2' }}
+		<button class="btn btn-primary mt-3" type="submit">Зарегистрироваться</button>
+	</form>
+	<p class="text-center">Если у вас уже есть аккаунт, <a href="{% url 'login' %}">войдите</a></p>
+</div>
+
+{% endblock %}
