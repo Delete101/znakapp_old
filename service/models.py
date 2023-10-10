@@ -72,6 +72,11 @@ class Cart(models.Model):
     expert_price = models.DecimalField(max_digits=10, decimal_places=2)
 
 
-# class CartItem(models.Model):
-#     product = models.ForeignKey(Cart, on_delete=models.CASCADE)
-#     quantity = models.PositiveIntegerField(default=1)
+class ClearHistory(models.Model):
+    platform = models.CharField(max_length=30)
+    params = models.TextField()
+    date = models.DateTimeField(default=now, editable=False)
+    lot_link = models.TextField()
+
+    def __str__(self):
+        return self.name
