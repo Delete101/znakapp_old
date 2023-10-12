@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 
 
 static_out_dir = '/Users/daniillavrentyev/PycharmProjects/znakapp3.8/znakapp_38/znakapp/znakapp/service/static/out'
+txt_out_dir = '/Users/daniillavrentyev/PycharmProjects/znakapp3.8/znakapp_38/znakapp/znakapp/service/static'
 
 def parsing_krisha_kz(link):
     response = requests.get(link)
@@ -40,12 +41,13 @@ def parsing_krisha_kz(link):
         #         file.write(f'{info_list[i]}: {param_list[i]}\n')
         #     file.write(f'Цена: {total_price}')
 
-        offer_info = soup.find('div', class_='offer__advert-title').text.strip()
+        offer_info = soup.find('div', class_='offer__advert-title').find('h1').text.strip()
         print(offer_info)
 
-        with open(f'{static_out_dir}/info_list.txt', 'w') as file:
+        with open(f'{txt_out_dir}/info_list.txt', 'w') as file:
             file.write(f'{offer_info}')
 
 
     except Exception as ex:
         print(f'Save error')
+

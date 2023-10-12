@@ -19,5 +19,6 @@ urlpatterns = [
     path('politica-obrabotki/', views.pol_obr, name='pol_obr'),
     path('sposobi-oplati/', views.sposob_opl, name='sposob_opl'),
     path('checkout/<str:item>/', views.checkout_view, name='checkout'),
-    path('oferta/', views.oferta, name='oferta')
+    path('oferta/', views.oferta, name='oferta'),
+    path('login/cabinet/download_clear_history/<int:history_id>/', views.download_clear_history, name='download_clear_history'),
 ]
