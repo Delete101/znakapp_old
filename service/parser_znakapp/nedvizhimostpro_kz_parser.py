@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 static_out_dir = '/Users/daniillavrentyev/PycharmProjects/znakapp3.8/znakapp_38/znakapp/znakapp/service/static/out'
+txt_out_dir = '/Users/daniillavrentyev/PycharmProjects/znakapp3.8/znakapp_38/znakapp/znakapp/service/static'
 
 def parsing_nevdizhimostpro_kz(link):
     response = requests.get(link)
@@ -28,6 +29,6 @@ def parsing_nevdizhimostpro_kz(link):
           f'Площадь: {details[4]}',
           ]
 
-    with open(f'{static_out_dir}/info_list.txt', 'w') as file:
+    with open(f'{txt_out_dir}/info_list.txt', 'w') as file:
         for item in info_list:
             file.write("%s\n" % item)

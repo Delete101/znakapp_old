@@ -153,33 +153,35 @@
 </div>
 {% endif %}
 
-<!--<div class="container">-->
-<!--    <div class="table-responsive">-->
-<!--<table class="table" style="background-color: #333232; border-style: dotted">-->
-<!--  <thead class="text-white">-->
-<!--    <tr>-->
-<!--      <th scope="col">#</th>-->
-<!--      <th scope="col">Площадка</th>-->
-<!--      <th scope="col">Адрес</th>-->
-<!--      <th scope="col">Дата</th>-->
-<!--        <th scope="col"> Объявление </th>-->
-<!--      <th scope="col">Скачать</th>-->
-<!--    </tr>-->
-<!--  </thead>-->
-<!--  <tbody class="table-group-divider text-white">-->
-<!--  {% for elem in user_request %}-->
-<!--    <tr>-->
-<!--      <th scope="row">{{ elem.pk }}</th>-->
-<!--      <td>{{ elem.platform }}</td>-->
-<!--        <td>{{ elem.addres }}</td>-->
-<!--      <td>{{ elem.created_date }}</td>-->
-<!--        <td><a href="{{ elem.lot_link }}">К обьявлению</a></td>-->
-<!--      <td><a href="{{ elem.download_link }}">Скачать</a></td>-->
-<!--    </tr>-->
-<!--  {% endfor %}-->
-<!--  </tbody>-->
-<!--</table>-->
-<!--</div>-->
-<!--</div>-->
 
+<!-- Clear History table -->
+{% if user_request %}
+<div class="container mt-5">
+    <div class="table-responsive">
+        <table class="table text-center" style="background-color: #333232; border-style: dotted">
+            <thead class="text-white">
+                <tr>
+                    <th scope="col">Площадка</th>
+                    <th scope="col">Параметры</th>
+                    <th scope="col">Дата</th>
+                    <th scope="col">Объявление</th>
+                    <th scope="col">Скачать</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider text-white">
+                {% for elem in user_request %}
+                <tr>
+                    <td>{{ elem.platform }}</td>
+                    <td>{{ elem.params }}</td>
+                    <td>{{ elem.date }}</td>
+                    <td><a href="{{ elem.lot_link }}"><input class="btn btn-primary" type="submit" value="К объявлению" id="LotLinkButton"></a></button></td>
+                    <td><a href="{% url 'download_clear_history' history_id=elem.id %}"><input class="btn btn-primary" type="submit" value="Скачать" id="HistoryButtonDownload"></a></button></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endif %}
+<!-- Clear History table -->
 {% endblock %}

@@ -1,5 +1,5 @@
 from django.conf import settings
-from django.utils.timezone import now
+from django.utils import timezone
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
@@ -17,7 +17,7 @@ class UserRequests(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     platform = models.CharField(max_length=20)
     addres = models.CharField(max_length=100)
-    created_date = models.DateTimeField(default=now, editable=False)
+    created_date = models.DateTimeField(default=timezone.now, editable=False)
     lot_link = models.TextField()
     download_link = models.TextField()
 
@@ -73,10 +73,11 @@ class Cart(models.Model):
 
 
 class ClearHistory(models.Model):
+    user = models.CharField(max_length=100)
     platform = models.CharField(max_length=30)
     params = models.TextField()
-    date = models.DateTimeField(default=now, editable=False)
+    date = models.DateTimeField(default=timezone.now, editable=False)
     lot_link = models.TextField()
 
     def __str__(self):
-        return self.name
+        return f"ClearHistory ID: {self.id}"

@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 
 
 static_out_dir = '/Users/daniillavrentyev/PycharmProjects/znakapp3.8/znakapp_38/znakapp/znakapp/service/static/out'
+txt_out_dir = '/Users/daniillavrentyev/PycharmProjects/znakapp3.8/znakapp_38/znakapp/znakapp/service/static'
+
 
 def parsing_olx_kz(link):
     response = requests.get(link)
@@ -21,7 +23,7 @@ def parsing_olx_kz(link):
         info = soup.find('div', {'data-cy': 'ad_description'})
         price = soup.find('div', {'data-testid': 'ad-price-container'})
         info_list = [f'Цена: {price.text}', f'{info.text}']
-        with open(f'{static_out_dir}/info_list.txt', 'w') as file:
+        with open(f'{txt_out_dir}/info_list.txt', 'w') as file:
             for item in info_list:
                 file.write("%s\n" % item)
     except Exception as ex:

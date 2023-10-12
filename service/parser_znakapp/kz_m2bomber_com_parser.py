@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 
 static_out_dir = '/Users/daniillavrentyev/PycharmProjects/znakapp3.8/znakapp_38/znakapp/znakapp/service/static/out'
-
+txt_out_dir = '/Users/daniillavrentyev/PycharmProjects/znakapp3.8/znakapp_38/znakapp/znakapp/service/static'
 
 def parsing_kz_m2bomber(link):
     response = requests.get(link)
@@ -33,7 +33,7 @@ def parsing_kz_m2bomber(link):
               f'Этаж: {param_list[3]}',
               f'Цена: {total_price}']
 
-        with open(f'{static_out_dir}/info_list.txt', 'w') as file:
+        with open(f'{txt_out_dir}/info_list.txt', 'w') as file:
             for item in info_list:
                 file.write("%s\n" % item)
     except Exception as ex:

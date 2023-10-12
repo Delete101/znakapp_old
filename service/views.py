@@ -1,24 +1,25 @@
-from django.shortcuts import render, redirect, HttpResponse
+from django.shortcuts import render, redirect, HttpResponse, Http404
 from django.contrib.auth import authenticate, login, logout
 from .forms import LoginForm, NewUserForm
-from django.contrib import messages
-from .models import UserInfo, UserRequests, ClearPrice, Cart
+from .models import UserInfo, UserRequests, ClearPrice, Cart, ClearHistory
 import subprocess
-import os
+import os, sys
 import zipfile
 from datetime import datetime
 from .parser_znakapp.main import main as parsers_img
+from django.contrib.auth import get_user_model
 
 
 
 
 static_dir = '/Users/daniillavrentyev/PycharmProjects/znakapp3.8/znakapp_38/znakapp/znakapp/service/static'
-static_parser_dir = '/Users/daniillavrentyev/PycharmProjects/znakapp3.8/znakapp_38/znakapp/znakapp/service/parser_znakapp/images'
-static_out_dir = '/Users/daniillavrentyev/PycharmProjects/znakapp3.8/znakapp_38/znakapp/znakapp/service/static/out'
+static_parser_dir = '/Users/daniillavrentyev/PycharmProjects/znakapp3.8/znakapp_38/znakapp/znakapp/service/parser_znakapp/images/'
+static_out_dir = '/Users/daniillavrentyev/PycharmProjects/znakapp3.8/znakapp_38/znakapp/znakapp/service/static/out/'
 static_out_users_dir = '/Users/daniillavrentyev/PycharmProjects/znakapp3.8/znakapp_38/znakapp/znakapp/service/static/users_out'
 mask_path = '/Users/daniillavrentyev/PycharmProjects/znakapp3.8/znakapp_38/znakapp/znakapp/service/lama/prepare_masks.py'
 lama_path = '/Users/daniillavrentyev/PycharmProjects/znakapp3.8/znakapp_38/znakapp/znakapp/service/lama/lama/bin/predict.py'
 txt_out_dir = '/Users/daniillavrentyev/PycharmProjects/znakapp3.8/znakapp_38/znakapp/znakapp/service/static'
+python_path = sys.executable
 
 
 def index(requests):
@@ -68,6 +69,7 @@ def contacts(requests):
     return render(requests, 'service/contacts.html')
 
 
+
 def cabinet(requests, user_id):
     cart = Cart.objects.first()
     if requests.user.is_authenticated and requests.method == 'POST':
@@ -80,9 +82,40 @@ def cabinet(requests, user_id):
         input_value = requests.POST.get('link_input')
         if input_value:
             parsers_img(str(input_value))
+            # Add info for Clear History
+            if "kn.kz" in input_value:
+                platform = 'www.kn.kz'
+                with open(f'{txt_out_dir}/info_list.txt,', 'r') as file:
+                    params = file.read().strip()
+            elif "kz.m2" in input_value:
+                platform = 'kz.m2bomber.com'
+                with open(f'{txt_out_dir}/info_list.txt,', 'r') as file:
+                    params = file.read().strip()
+            elif "nedvizhimostpro.kz" in input_value:
+                platform = 'nedvizhimostpro.kz'
+                with open(f'{txt_out_dir}/info_list.txt,', 'r') as file:
+                    params = file.read().strip()
+            elif "olx.kz" in input_value:
+                platform = 'olx.kz'
+                with open(f'{txt_out_dir}/info_list.txt,', 'r') as file:
+                    params = file.read().strip()
             if 'krisha.kz' in input_value:
                 subprocess.call([python_path, mask_path])
                 subprocess.call([python_path, lama_path])
+                platform = "krisha.kz"
+                with open(f'{txt_out_dir}/info_list.txt', 'r') as file:
+                    params = file.read().strip()
+
+            user_id = str(requests.user)
+            # Date to save in DB (ClearHistory)
+            new_clear_history = ClearHistory(
+                user=user_id,
+                platform=platform,
+                params=params,
+                lot_link=input_value
+            )
+
+            new_clear_history.save()
 
             # Date now
             now = datetime.now()
@@ -101,10 +134,14 @@ def cabinet(requests, user_id):
                 data = file.read()
 
             context = data
+            user_request = ClearHistory.objects.filter(user=user_id)
+            data_from_base = {'user_request': user_request}
             return render(requests, 'service/cabinet.html',
-                          {'images': photos, 'dt': dt_string, 'cart': cart, 'context': context})
+                          {'images': photos, 'dt': dt_string, 'cart': cart, 'context': context, **data_from_base})
+        user_request = ClearHistory.objects.filter(user=user_id)
+        data_from_base = {'user_request': user_request}
         return render(requests, 'service/cabinet.html',
-                      {'error': 'Ошибка: исправьте ссылку на объявления', 'cart': cart})
+                      {'error': 'Ошибка: исправьте ссылку на объявления', 'cart': cart, **data_from_base})
 
     if requests.user.is_authenticated:
         user_info = UserInfo.objects.filter(user=requests.user)
@@ -115,8 +152,10 @@ def cabinet(requests, user_id):
         balance = 0
         for elem in user_info:
             balance = elem.balance / clear_price
+        user_request = ClearHistory.objects.filter(user=user_id)
+        data_from_base = {'user_request': user_request}
         return render(requests, 'service/cabinet.html',
-                      {'user_info': int(balance), 'user_request': user_request, 'cart': cart})
+                      {'user_info': int(balance), 'user_request': user_request, 'cart': cart, **data_from_base})
     else:
         return redirect('login')
 
@@ -150,7 +189,7 @@ def register_request(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            os.mkdir(f'{static_dir}users_out/{user}')
+            os.mkdir(f'{static_out_users_dir}/{user}')
             return redirect(user_login)
         error_msg = 'Проверьте логин и пароль и попробуйте еще раз.'
     form = NewUserForm()
@@ -184,7 +223,7 @@ def download_images(requests, user_id):
         files = os.listdir(latest_dir_path)
 
         # Создаем архив
-        temp_zip_path = static_dir + 'images.zip'  # Замените на путь, куда вы хотите сохранить архив
+        temp_zip_path = static_dir + 'images.zip'
         with zipfile.ZipFile(temp_zip_path, 'w') as zipf:
             for file in files:
                 file_path = os.path.join(latest_dir_path, file)
@@ -239,3 +278,26 @@ def checkout_view(request, item):
 
 def oferta(request):
     return render(request, 'service/oferta.html')
+
+
+def download_clear_history(request, history_id):
+    try:
+        item = ClearHistory.objects.get(pk=history_id)
+    except ClearHistory.DoesNotExist:
+        return HttpResponse("Объект не найден", status=404)
+
+    temp_dir = f"{static_dir}/tmp/{history_id}"
+    os.makedirs(temp_dir, exist_ok=True)
+
+    images_dir = f"{temp_dir}/images"
+    os.makedirs(images_dir, exist_ok=True)
+
+
+    # Получаем список элементов в директории
+    user_id = str(request.user)
+    date_string = item.date
+    formatted_date = date_string.strftime("%d_%m_%Y.%H_%M_%S")
+    entries = os.scandir(f"{static_out_users_dir}{user_id}/{formatted_date}")
+    print(entries)
+
+
